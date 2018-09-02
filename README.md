@@ -1,3 +1,6 @@
+if you're interested in joining https://discord.gg/hu8ggBY
+original disassembly readme below:
+
 # Pokémon Crystal [![Build Status][travis-badge]][travis]
 
 This is a disassembly of Pokémon Crystal.
