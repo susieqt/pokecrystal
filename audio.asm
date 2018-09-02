@@ -14,7 +14,6 @@ INCLUDE "audio/sfx_pointers.asm"
 SECTION "Songs 1", ROMX
 
 INCLUDE "audio/music/route36.asm"
-INCLUDE "audio/music/rivalbattle.asm"
 INCLUDE "audio/music/rocketbattle.asm"
 INCLUDE "audio/music/elmslab.asm"
 INCLUDE "audio/music/darkcave.asm"
@@ -139,6 +138,11 @@ INCLUDE "audio/music/mobileadapter.asm"
 SECTION "Extra Songs 2", ROMX
 
 INCLUDE "audio/music/postcredits.asm"
+
+
+SECTION "Custom Songs 1", ROMX
+
+INCLUDE "audio/music/rivalbattle.asm"
 
 
 SECTION "Sound Effects", ROMX

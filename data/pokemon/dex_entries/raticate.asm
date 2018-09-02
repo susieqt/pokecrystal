@@ -1,10 +1,10 @@
 	db "RAT@" ; species name
 	dw 204, 410 ; height, weight
 
-	db   "The webs on its"
-	next "hind legs enable"
-	next "it to cross"
+	db   "It's head shrinks"
+	next "when it EVOLVEs."
+	next "While it is thank-"
 
-	page "rivers. It search-"
-	next "es wide areas for"
-	next "food.@"
+	page "ful, it's mouth is"
+	next "now too small, so"
+	next "it will starve.@"

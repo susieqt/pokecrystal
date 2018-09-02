@@ -1,10 +1,10 @@
 	db "RAT@" ; species name
 	dw 100, 80 ; height, weight
 
-	db   "This #MON's"
-	next "impressive vital-"
-	next "ity allows it to"
+	db   "It's giant mouth"
+	next "can never fully"
+	next "close. Perhaps"
 
-	page "live anywhere. It"
-	next "also multiplies"
-	next "very quickly.@"
+	page "because of this,"
+	next "it is constantly"
+	next "in extreme pain.@"
