@@ -207,7 +207,7 @@ Text_WhatDoYouThinkYoureDoing:
 Text_ItsDangerousToGoAlone:
 	text "There's mufuckin"
 	line "#MONs all up in"
-	cont "there."
+	cont "there." ;could use better phrasing
 
 	para "[smacks lips]"
 	line "Fuck outta here."
@@ -224,19 +224,19 @@ Text_TellMomIfLeaving:
 	line "Finally leaving?"
 
 	para "You should tell"
-	line "your mom if you"
+	line "your mom if you" ;todo?
 	cont "are leaving."
 	
 	para "She needs to"
 	line "prepare the in-"
-	cont "jections."
+	cont "jections." ;weird esoteric joke, change
 	done
 
 Text_CallMomOnGear:
 	text "Call your mom on"
 	line "your #GEAR to"
 
-	para "let her know how"
+	para "let her know how" ;todo
 	line "you're doing."
 	done
 
@@ -244,7 +244,7 @@ Text_ElmDiscoveredNewMon:
 	text "Yo, <PLAYER>!"
 
 	para "I hear PROF.ELM"
-	line "discovered some"
+	line "discovered some" ;todo
 	cont "new #MON."
 	done
 
@@ -260,7 +260,7 @@ NewBarkTownRivalText2:
 	text "Hey!"
 	
 	para "Stop oppressing"
-	line "me, Nazi."
+	line "me, Nazi." ;meme forcing, change?
 	done
 
 NewBarkTownSignText:
@@ -268,8 +268,8 @@ NewBarkTownSignText:
 
 	para "The Town Where the"
 	line "Winds of a New"
-	cont "Shitty Romhack"
-	cont "Begin"
+	cont "Shitty Romhack" ;should this be on a new paragraph?
+	cont "Blow"
 	done
 
 NewBarkTownPlayersHouseSignText:
@@ -277,7 +277,7 @@ NewBarkTownPlayersHouseSignText:
 	done
 
 NewBarkTownElmsLabSignText:
-	text "ELM #MON LAB"
+	text "ELM #MON LAB" ;todo
 	done
 
 NewBarkTownElmsHouseSignText:
