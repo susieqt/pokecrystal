@@ -143,7 +143,6 @@ INCLUDE "audio/music/postcredits.asm"
 SECTION "Custom Songs 1", ROMX
 
 INCLUDE "audio/music/rivalbattle.asm"
-INCLUDE "audio/music/kerostage1.asm"
 
 
 SECTION "Sound Effects", ROMX

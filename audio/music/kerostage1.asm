@@ -1,10 +1,10 @@
-Music_KeroStage1:
-	musicheader 4, 1, Music_KeroStage1_Ch1
-	musicheader 1, 2, Music_KeroStage1_Ch2
-	musicheader 1, 3, Music_KeroStage1_Ch3
-	musicheader 1, 4, Music_KeroStage1_Ch4
+Music_Route29:
+	musicheader 4, 1, Music_Route29_Ch1
+	musicheader 1, 2, Music_Route29_Ch2
+	musicheader 1, 3, Music_Route29_Ch3
+	musicheader 1, 4, Music_Route29_Ch4
 
-Music_KeroStage1_Ch1:
+Music_Route29_Ch1:
 	tempo $7C
 	volume $77
 	stereopanning $77
@@ -391,7 +391,7 @@ Music_KeroStage1_Ch1:
 	note D_, 8
 	endchannel
 
-Music_KeroStage1_Ch2:
+Music_Route29_Ch2:
 	octave 3
 	notetype $C, $00
 	note E_, 2
@@ -1119,7 +1119,7 @@ Music_KeroStage1_Ch2:
 	note D_, 1
 	endchannel
 
-Music_KeroStage1_Ch3:
+Music_Route29_Ch3:
 	octave 3
 	notetype $C, $00
 	note C_, 2
@@ -1662,7 +1662,7 @@ Music_KeroStage1_Ch3:
 	note A#, 8
 	endchannel
 
-Music_KeroStage1_Ch4:
+Music_Route29_Ch4:
 	togglenoise 0
 	notetype $C
 	note B_, 1
