@@ -188,46 +188,48 @@ Movement_SilverReturnsToTheShadows_NBT:
 
 Text_GearIsImpressive:
 	text "Wow, your #GEAR"
-	line "is impressive!"
+	line "is awful!"
 
 	para "Did your mom get"
-	line "it for you?"
+	line "it for you, nerd?"
 	done
 
 Text_WaitPlayer:
-	text "Wait, <PLAY_G>!"
+	text "Ayo hol up,"
+	line "<PLAY_G>."
 	done
 
 Text_WhatDoYouThinkYoureDoing:
-	text "What do you think"
-	line "you're doing?"
+	text "'chu think you"
+	line "doin?"
 	done
 
 Text_ItsDangerousToGoAlone:
-	text "It's dangerous to"
-	line "go out without a"
-	cont "#MON!"
+	text "There's mufuckin"
+	line "#MONs all up in"
+	cont "there."
 
-	para "Wild #MON"
-	line "jump out of the"
-
-	para "grass on the way"
-	line "to the next town."
+	para "[smacks lips]"
+	line "Fuck outta here."
 	done
 
 Text_YourMonIsAdorable:
-	text "Oh! Your #MON"
-	line "is adorable!"
-	cont "I wish I had one!"
+	text "Jesus christ,"
+	line "you're an ugly"
+	cont "cunt."
 	done
 
 Text_TellMomIfLeaving:
 	text "Hi, <PLAY_G>!"
-	line "Leaving again?"
+	line "Finally leaving?"
 
 	para "You should tell"
 	line "your mom if you"
 	cont "are leaving."
+	
+	para "She needs to"
+	line "prepare the in-"
+	cont "jections."
 	done
 
 Text_CallMomOnGear:
@@ -249,14 +251,14 @@ Text_ElmDiscoveredNewMon:
 NewBarkTownRivalText1:
 	text "<……>"
 
-	para "So this is the"
-	line "famous ELM #MON"
-	cont "LAB…"
+	para "Now where would"
+	line "he keep the money"
+	cont "..."
 	done
 
 NewBarkTownRivalText2:
-	text "…What are you"
-	line "staring at?"
+	text "Stop oppressing"
+	line "me, Nazi."
 	done
 
 NewBarkTownSignText:
@@ -264,11 +266,12 @@ NewBarkTownSignText:
 
 	para "The Town Where the"
 	line "Winds of a New"
-	cont "Beginning Blow"
+	cont "Shitty Romhack"
+	cont "Begin"
 	done
 
 NewBarkTownPlayersHouseSignText:
-	text "<PLAYER>'s House"
+	text "<PLAYER>'s Lair"
 	done
 
 NewBarkTownElmsLabSignText:
@@ -276,7 +279,8 @@ NewBarkTownElmsLabSignText:
 	done
 
 NewBarkTownElmsHouseSignText:
-	text "ELM'S HOUSE"
+	text "ELM'S BARBECUE"
+	line "AND FOOT MASSAGE"
 	done
 
 NewBarkTown_MapEvents:
