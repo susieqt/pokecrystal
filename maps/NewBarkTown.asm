@@ -251,13 +251,15 @@ Text_ElmDiscoveredNewMon:
 NewBarkTownRivalText1:
 	text "<……>"
 
-	para "Now where would"
-	line "he keep the money"
-	cont "..."
+	para "Where the hell"
+	line "does he keep the"
+	cont "money..."
 	done
 
 NewBarkTownRivalText2:
-	text "Stop oppressing"
+	text "Hey!"
+	
+	para "Stop oppressing"
 	line "me, Nazi."
 	done
 
