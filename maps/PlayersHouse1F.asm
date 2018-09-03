@@ -246,8 +246,11 @@ MomGivesPokegearText:
 	done
 
 IsItDSTText:
-	text "Is it Daylight"
-	line "Saving Time now?"
+	text "Are you going to"
+	line "turn on Daylight"
+	
+	para "Savings Time for"
+	line "some reason?"
 	done
 
 ComeHomeForDSTText:
@@ -263,38 +266,34 @@ ComeHomeForDSTText:
 	done
 
 KnowTheInstructionsText:
-	text "Don't you just"
-	line "turn the #GEAR"
+	text "Oh, good. I'll"
+	line "just let you go"
 
-	para "on and select the"
-	line "PHONE icon?"
+	para "and not explain"
+	line "it for no reason."
+	
+	para "Only a complete"
+	line "idiot would do"
+	cont "that."
 	done
 
 DontKnowTheInstructionsText:
-	text "I'll read the"
-	line "instructions."
-
-	para "Turn the #GEAR"
-	line "on and select the"
-	cont "PHONE icon."
+	text "Seriously? Have"
+	line "you never played"
+	cont "gen 2?"
 	done
 
 InstructionsNextText:
-	text "Phone numbers are"
-	line "stored in memory."
-
-	para "Just choose a name"
-	line "you want to call."
-
-	para "Gee, isn't that"
-	line "convenient?"
+	text "Figure it out,"
+	line "you fucking loon."
 	done
 
 HurryUpElmIsWaitingText:
 	text "PROF.ELM is wait-"
 	line "ing for you."
 
-	para "Hurry up, baby!"
+	para "Hurry up, daddy"
+	line "uwu"
 	done
 
 SoWhatWasProfElmsErrandText:
@@ -320,21 +319,34 @@ ImBehindYouText:
 
 NeighborMornIntroText:
 	text "Good morning,"
-	line "<PLAY_G>!"
+	line "Dad!"
 
-	para "I'm visiting!"
+	para "You finally got"
+	line "back from the"
+	cont "store."
+	
+	para "You even brought"
+	line "the cigarettes!"
 	done
 
-NeighborDayIntroText:
-	text "Hello, <PLAY_G>!"
-	line "I'm visiting!"
+NeighborDayIntroText: ;shit joke
+	text "Hi, Dad!"
+	
+	para "Didn't that"
+	line "attorney say"
+	
+	para "you can't come"
+	line "here anymore?"
 	done
 
-NeighborNiteIntroText:
-	text "Good evening,"
-	line "<PLAY_G>!"
-
-	para "I'm visiting!"
+NeighborNiteIntroText: ;just a duplicate for now
+	text "Hi, Dad!"
+	
+	para "Didn't that"
+	line "attorney say"
+	
+	para "you can't come"
+	line "here anymore?"
 	done
 
 NeighborText:
@@ -354,8 +366,7 @@ NeighborText:
 StoveText:
 	text "Mom's specialty!"
 
-	para "CINNABAR VOLCANO"
-	line "BURGER!"
+	para "LASAGNA!"
 	done
 
 SinkText:
@@ -377,10 +388,10 @@ TVText:
 	line "TV: Stars dot the"
 
 	para "sky as two boys"
-	line "ride on a train…"
+	line "undress and..."
 
-	para "I'd better get"
-	line "rolling too!"
+	para "I should DVR"
+	line "this."
 	done
 
 PlayersHouse1F_MapEvents:
