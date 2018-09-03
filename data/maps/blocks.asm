@@ -1045,9 +1045,3 @@ BetaBlank_Blocks:
 
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
-
-	
-SECTION "Map Blocks 4", ROMX
-
-TestMap1_Blocks:
-	INCBIN "maps/TestMap1.blk"

@@ -63,13 +63,9 @@ elif "\1" == "east"
 endc
 ENDM
 
-	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, NORTH | WEST | EAST
-	connection north, TestMap1, TEST_MAP_1, 0, 1, 9
+	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	connection west, Route29, ROUTE_29, 0, 0, 9
 	connection east, Route27, ROUTE_27, 0, 0, 9
-	
-	map_attributes TestMap1, TEST_MAP_1, $05, SOUTH
-	connection south, NewBarkTown, NEW_BARK_TOWN, 0, 1, 9
 
 	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH | EAST
 	connection north, Route30, ROUTE_30, 5, 0, 10
