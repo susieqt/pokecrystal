@@ -1,10 +1,10 @@
-	db "GENETIC@" ; species name
-	dw 607, 2690 ; height, weight
+	db "BROTHER@" ; species name
+	dw 505, 1310 ; height, weight
 
-	db   "Said to rest qui-"
-	next "etly in an"
-	next "undiscovered cave,"
+	db   "He's MARIO's bro-"
+	next "ther.He was exiled"
+	next "to BOOTLEG LAND"
 
-	page "this #MON was"
-	next "created solely for"
-	next "battling.@"
+	page "because of his"
+	next "contagious and"
+	next "fatal TERMINAL 7.@"

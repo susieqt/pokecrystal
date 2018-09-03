@@ -148,7 +148,7 @@ PokemonNames::
 	db "DRATINI@@@"
 	db "DRAGONAIR@"
 	db "DRAGONITE@"
-	db "MEWTWO@@@@"
+	db "LUIGI@@@@@"
 	db "MEW@@@@@@@"
 	db "CHIKORITA@"
 	db "BAYLEEF@@@"
