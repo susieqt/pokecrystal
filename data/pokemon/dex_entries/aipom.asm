@@ -1,10 +1,10 @@
-	db "LONG TAIL@" ; species name
-	dw 207, 250 ; height, weight
+	db "SCRATCHCAT@" ; species name
+	dw 100, 70 ; height, weight
 
-	db   "It uses its tail"
-	next "to hang on to tree"
-	next "branches. It uses"
+	db   "It wuvs things"
+	next "that spawkwe. When"
+	next "it sees a shwiny"
 
-	page "its momentum to"
-	next "swing from one"
-	next "branch to another.@"
+	page "object, it's"
+	next "eyes go from"
+	next "uwu to OwO!@"
