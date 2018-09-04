@@ -188,7 +188,7 @@ PokemonNames::
 	db "HOPPIP@@@@"
 	db "SKIPLOOM@@"
 	db "JUMPLUFF@@"
-	db "MEWUWTH@@@"
+	db "MEOWOTH@@@"
 	db "SUNKERN@@@"
 	db "SUNFLORA@@"
 	db "TAABAN@@@@"
