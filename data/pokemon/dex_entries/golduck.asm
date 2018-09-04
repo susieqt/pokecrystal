@@ -1,10 +1,10 @@
 	db "DUCK@" ; species name
 	dw 507, 1690 ; height, weight
 
-	db   "It swims grace-"
-	next "fully along on the"
-	next "quiet, slow-moving"
+	db   "Due to it's incre-"
+	next "ased intelligence"
+	next "from evolution, it"
 
-	page "rivers and lakes"
-	next "of which it is so"
-	next "fond.@"
+	page "now cooks it's"
+	next "sponges in forges"
+	next "made by NIMBAT.@"
