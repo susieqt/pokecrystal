@@ -1,6 +1,7 @@
 	const_def 2 ; object constants
 	const NEWBARKTOWN_TEACHER
-	const NEWBARKTOWN_FISHER
+	const NEWBARKTOWN_FISHER1
+	const NEWBARKTOWN_FISHER2 ;1 and 2, for a testing npc
 	const NEWBARKTOWN_SILVER
 
 NewBarkTown_MapScripts:
@@ -103,6 +104,21 @@ NewBarkTownTeacherScript:
 
 NewBarkTownFisherScript:
 	jumptextfaceplayer Text_ElmDiscoveredNewMon
+	
+NewBarkTownTestNPCScript: ;testing
+	jumptextfaceplayer Text_nbtTestDialogue
+	
+;-----THESE ARE JUST REFERENCES FOR ME-----	
+;AideScript_GivePotion:
+;	opentext
+;	writetext AideText_GiveYouPotion
+;	buttonsound
+;	verbosegiveitem POTION
+;	writetext AideText_AlwaysBusy
+;	waitbutton
+;	closetext
+;	setscene SCENE_ELMSLAB_NOTHING
+;	end
 
 NewBarkTownSilverScript:
 	opentext
@@ -136,6 +152,9 @@ NewBarkTownElmsLabSign:
 
 NewBarkTownElmsHouseSign:
 	jumptext NewBarkTownElmsHouseSignText
+	
+NewBarkTownTestAreaSign:
+	jumptext NewBarkTownTestAreaSignText
 
 Movement_TeacherRunsToYou1_NBT:
 	step LEFT
@@ -223,13 +242,9 @@ Text_TellMomIfLeaving:
 	text "Hi, <PLAY_G>!"
 	line "Finally leaving?"
 
-	para "You should tell"
-	line "your mom if you" ;todo?
-	cont "are leaving."
-	
-	para "She needs to"
-	line "prepare the in-"
-	cont "jections." ;weird esoteric joke, change
+	para "Please for the"
+	line "love of god," ;todo?
+	cont "don't come back."
 	done
 
 Text_CallMomOnGear:
@@ -243,9 +258,14 @@ Text_CallMomOnGear:
 Text_ElmDiscoveredNewMon:
 	text "Yo, <PLAYER>!"
 
-	para "I hear PROF.ELM"
-	line "discovered some" ;todo
+	para "I hear QUALUIGI"
+	line "discovered some"
 	cont "new #MON."
+	done
+	
+Text_nbtTestDialogue: ;for test NPC
+	text "This is a test"
+	line "NPC."
 	done
 
 NewBarkTownRivalText1:
@@ -253,7 +273,7 @@ NewBarkTownRivalText1:
 
 	para "Where the hell"
 	line "does he keep the"
-	cont "money..."
+	cont "money?"
 	done
 
 NewBarkTownRivalText2:
@@ -273,16 +293,25 @@ NewBarkTownSignText:
 	done
 
 NewBarkTownPlayersHouseSignText:
-	text "<PLAYER>'s Lair"
+	text "<PLAYER>'s Shed"
 	done
 
 NewBarkTownElmsLabSignText:
-	text "ELM #MON LAB" ;todo
+	text "QUALUIGI'S LAB"
 	done
 
 NewBarkTownElmsHouseSignText:
-	text "ELM'S BARBECUE"
-	line "AND FOOT MASSAGE"
+	text "QUALUIGI'S BIG"
+	line "ASS TRUCK RENTAL"
+	cont "AND STORAGE"
+	done
+	
+NewBarkTownTestAreaSignText:
+	text "Dev testing area"
+	line "to the north if"
+	
+	para "Susie gets around"
+	line "to putting it in."
 	done
 
 NewBarkTown_MapEvents:
@@ -303,8 +332,10 @@ NewBarkTown_MapEvents:
 	bg_event 11,  5, BGEVENT_READ, NewBarkTownPlayersHouseSign
 	bg_event  3,  3, BGEVENT_READ, NewBarkTownElmsLabSign
 	bg_event  9, 13, BGEVENT_READ, NewBarkTownElmsHouseSign
+	bg_event 17,  5, BGEVENT_READ, NewBarkTownTestAreaSign ;dev test area sign **CURRENTLY BROKEN**
 
 	db 3 ; object events
 	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
 	object_event 12,  9, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFisherScript, -1
+	object_event 7,  6, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownTestNPCScript, -1 
 	object_event  3,  2, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN

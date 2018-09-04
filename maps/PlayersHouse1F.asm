@@ -285,7 +285,7 @@ DontKnowTheInstructionsText:
 
 InstructionsNextText:
 	text "Figure it out,"
-	line "you fucking loon."
+	line "you fucking loon." ;triggers after a "Yes" answer, fix
 	done
 
 HurryUpElmIsWaitingText:
