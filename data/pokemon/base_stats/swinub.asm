@@ -3,7 +3,7 @@
 	db  50,  50,  40,  50,  30,  30
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, GROUND ; type
+	db ICE, FIGHTING ; type
 	db 225 ; catch rate
 	db 78 ; base exp
 	db NO_ITEM, NO_ITEM ; items
@@ -13,7 +13,7 @@
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/swinub/front.dimensions"
 	db 0, 0, 0, 0 ; padding
-	db GROWTH_SLOW ; growth rate
+	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
 	; tm/hm learnset

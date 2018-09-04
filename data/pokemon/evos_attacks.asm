@@ -712,31 +712,31 @@ PersianEvosAttacks:
 	db 0 ; no more level-up moves
 
 PsyduckEvosAttacks:
-	db EVOLVE_LEVEL, 33, GOLDUCK
+	db EVOLVE_LEVEL, 21, GOLDUCK
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 5, TAIL_WHIP
+	db 5, CONVERSION
 	db 10, DISABLE
 	db 16, CONFUSION
 	db 23, SCREECH
 	db 31, PSYCH_UP
-	db 40, FURY_SWIPES
+	db 40, CONVERSION2
 	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 GolduckEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, TAIL_WHIP
+	db 1, CONVERSION
 	db 1, DISABLE
-	db 1, CONFUSION
-	db 5, TAIL_WHIP
+	db 1, PSYCHIC_M
+	db 5, CONVERSION
 	db 10, DISABLE
 	db 16, CONFUSION
-	db 23, SCREECH
-	db 31, PSYCH_UP
-	db 44, FURY_SWIPES
-	db 58, HYDRO_PUMP
+	db 23, PSYBEAM
+	db 31, PSYCHIC_M
+	db 44, HYDRO_PUMP
+	db 58, CONVERSION2
 	db 0 ; no more level-up moves
 
 MankeyEvosAttacks:
@@ -1865,7 +1865,7 @@ FlareonEvosAttacks:
 	db 0 ; no more level-up moves
 
 PorygonEvosAttacks:
-	db EVOLVE_TRADE, UP_GRADE, PORYGON2
+	db EVOLVE_LEVEL, 25, PORYGON2
 	db 0 ; no more evolutions
 	db 1, CONVERSION2
 	db 1, TACKLE
@@ -2599,15 +2599,16 @@ endc
 	db 0 ; no more level-up moves
 
 AipomEvosAttacks:
+	db EVOLVE_LEVEL, 16, MEOWTH
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, TAIL_WHIP
 	db 6, SAND_ATTACK
-	db 12, BATON_PASS
-	db 19, FURY_SWIPES
+	db 12, PAY_DAY
+	db 19, CONFUSION
 	db 27, SWIFT
-	db 36, SCREECH
-	db 46, AGILITY
+	db 36, PSYCHIC_M
+	db 46, BITE
 	db 0 ; no more level-up moves
 
 SunkernEvosAttacks:
@@ -2981,7 +2982,7 @@ MagcargoEvosAttacks:
 	db 0 ; no more level-up moves
 
 SwinubEvosAttacks:
-	db EVOLVE_LEVEL, 33, PILOSWINE
+	db EVOLVE_LEVEL, 30, PILOSWINE
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 10, POWDER_SNOW
@@ -3201,7 +3202,7 @@ HitmontopEvosAttacks:
 	db 0 ; no more level-up moves
 
 SmoochumEvosAttacks:
-	db EVOLVE_LEVEL, 30, JYNX
+	db EVOLVE_LEVEL, 20, JYNX
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, LICK

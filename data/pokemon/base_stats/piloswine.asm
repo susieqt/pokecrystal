@@ -3,7 +3,7 @@
 	db 100, 100,  80,  50,  60,  60
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, GROUND ; type
+	db ICE, FIGHTING ; type
 	db 75 ; catch rate
 	db 160 ; base exp
 	db NO_ITEM, NO_ITEM ; items
@@ -13,7 +13,7 @@
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/piloswine/front.dimensions"
 	db 0, 0, 0, 0 ; padding
-	db GROWTH_SLOW ; growth rate
+	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
