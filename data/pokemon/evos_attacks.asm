@@ -794,42 +794,42 @@ ArcanineEvosAttacks:
 	db 0 ; no more level-up moves
 
 PoliwagEvosAttacks:
-	db EVOLVE_LEVEL, 25, POLIWHIRL
+	db EVOLVE_LEVEL, 19, POLIWHIRL
 	db 0 ; no more evolutions
 	db 1, BUBBLE
-	db 7, HYPNOSIS
+	db 7, POUND
 	db 13, WATER_GUN
-	db 19, DOUBLESLAP
+	db 19, SLAM
 	db 25, RAIN_DANCE
 	db 31, BODY_SLAM
-	db 37, BELLY_DRUM
+	db 37, BUBBLEBEAM
 	db 43, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 PoliwhirlEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, POLIWRATH
-	db EVOLVE_TRADE, KINGS_ROCK, POLITOED
+	db EVOLVE_LEVEL, 38, POLIWRATH
 	db 0 ; no more evolutions
-	db 1, BUBBLE
-	db 1, HYPNOSIS
+	db 1, BUBBLEBEAM
+	db 1, IRON_TAIL
 	db 1, WATER_GUN
-	db 7, HYPNOSIS
+	db 7, IRON_TAIL
 	db 13, WATER_GUN
-	db 19, DOUBLESLAP
-	db 27, RAIN_DANCE
-	db 35, BODY_SLAM
-	db 43, BELLY_DRUM
+	db 19, SLAM
+	db 27, BITE
+	db 35, SLAM
+	db 43, CRUNCH
 	db 51, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 PoliwrathEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WATER_GUN
-	db 1, HYPNOSIS
-	db 1, DOUBLESLAP
-	db 1, SUBMISSION
-	db 35, SUBMISSION
-	db 51, MIND_READER
+	db 1, BUBBLEBEAM
+	db 1, IRON_TAIL
+	db 1, CRUNCH
+	db 1, BITE
+	db 39, BEAT_UP
+	db 51, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 AbraEvosAttacks:

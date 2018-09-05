@@ -1,9 +1,9 @@
 	db POLIWRATH ; 062
 
-	db  90,  85,  95,  70,  70,  90
+	db  65,  114,  115,  62,  104,  85
 	;   hp  atk  def  spd  sat  sdf
 
-	db WATER, FIGHTING ; type
+	db WATER, DARK ; type
 	db 45 ; catch rate
 	db 185 ; base exp
 	db NO_ITEM, KINGS_ROCK ; items
