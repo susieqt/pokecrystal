@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const NEWBARKTOWN_TEACHER
 	const NEWBARKTOWN_FISHER1
-	const NEWBARKTOWN_FISHER2 ;1 and 2, for a testing npc
+	const NEWBARKTOWN_FISHER2 ;1 and 2, for a testing fisher npc
 	const NEWBARKTOWN_SILVER
 
 NewBarkTown_MapScripts:
