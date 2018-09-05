@@ -252,12 +252,11 @@ MoveDescriptions::
 	dw WhirlpoolDescription
 	dw BeatUpDescription
 	dw PukeBloodDescription
-	dw MoveFDDescription
+	dw KamikazeDescription
 	dw MoveFEDescription
 	dw MoveFFDescription
 	dw Move00Description
 
-MoveFDDescription:
 MoveFEDescription:
 MoveFFDescription:
 Move00Description:
@@ -1270,3 +1269,7 @@ BeatUpDescription:
 PukeBloodDescription:
 	db   "Strong move. Has"
 	next "heavy recoil.@"
+	
+KamikazeDescription:
+	db   "Ultimate power,"
+	next "Ultimate recoil@"

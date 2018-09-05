@@ -2638,19 +2638,19 @@ SunfloraEvosAttacks:
 
 YanmaEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, FORESIGHT
-	db 7, QUICK_ATTACK
-	db 13, DOUBLE_TEAM
+	db 1, SONICBOOM
+	db 1, SCREECH
+	db 7, OUTRAGE
+	db 13, SUBSTITUTE
 	db 19, SONICBOOM
-	db 25, DETECT
-	db 31, SUPERSONIC
+	db 25, SKY_ATTACK
+	db 31, SELFDESTRUCT
 if _CRYSTAL
-	db 37, WING_ATTACK
+	db 37, EXPLOSION
 else
-	db 37, SWIFT
+	db 37, SONICBOOM
 endc
-	db 43, SCREECH
+	db 40, KAMIKAZE
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:
@@ -2798,13 +2798,14 @@ ForretressEvosAttacks:
 
 DunsparceEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, RAGE
-	db 5, DEFENSE_CURL
-	db 13, GLARE
-	db 18, SPITE
-	db 26, PURSUIT
-	db 30, SCREECH
-	db 38, TAKE_DOWN
+	db 1, KAMIKAZE
+	db 5, AGILITY
+	db 13, BUBBLEBEAM
+	db 18, FLAME_WHEEL
+	db 26, SELFDESTRUCT
+	db 30, EXPLOSION
+	db 35, FLY
+	db 40, KAMIKAZE
 	db 0 ; no more level-up moves
 
 GligarEvosAttacks:

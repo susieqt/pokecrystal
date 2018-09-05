@@ -253,7 +253,7 @@ BattleAnimations::
 	dw BattleAnim_Whirlpool
 	dw BattleAnim_BeatUp
 	dw BattleAnim_PukeBlood
-	dw BattleAnim_253
+	dw BattleAnim_Kamikaze
 	dw BattleAnim_254
 	dw BattleAnim_SweetScent2
 ; $100
@@ -281,7 +281,6 @@ BattleAnimations::
 	dw BattleAnim_HitConfusion
 
 BattleAnim_0:
-BattleAnim_253:
 BattleAnim_254:
 BattleAnim_MirrorMove:
 	anim_ret
@@ -1368,6 +1367,7 @@ BattleAnim_Selfdestruct:
 	anim_wait 16
 	anim_ret
 
+BattleAnim_Kamikaze:
 BattleAnim_Explosion:
 	anim_1gfx ANIM_GFX_EXPLOSION
 	anim_bgeffect ANIM_BG_1F, $60, $4, $10
