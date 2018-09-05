@@ -5,6 +5,6 @@
 	next "MIDDLE-EAST, this"
 	next "BOOTLEG is illegal"
 
-	page "almost everywhere."
+	page "everywhere else."
 	next "It enjoys playing"
 	next "with TURBANN.@"
