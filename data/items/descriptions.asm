@@ -806,8 +806,8 @@ TeruSama13Desc:
 	db   "?@"
 
 MetalCoatDesc:
-	db   "Powers up steel-"
-	next "type moves. (HOLD)@"
+	db   "Evolves SCYTHER,"
+	next "ONIX, DITTO.@"
 
 DragonFangDesc:
 	db   "Powers up dragon-"

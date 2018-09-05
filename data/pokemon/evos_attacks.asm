@@ -1285,6 +1285,7 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
+	db EVOLVE_ITEM, METAL_COAT, STEELIX
 	db EVOLVE_TRADE, METAL_COAT, STEELIX
 	db 0 ; no more evolutions
 	db 1, TACKLE
@@ -1557,16 +1558,16 @@ ChanseyEvosAttacks:
 
 TangelaEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CONSTRICT
-	db 4, SLEEP_POWDER
-	db 10, ABSORB
-	db 13, POISONPOWDER
-	db 19, VINE_WHIP
-	db 25, BIND
-	db 31, MEGA_DRAIN
-	db 34, STUN_SPORE
-	db 40, SLAM
-	db 46, GROWTH
+	db 1, SCREECH
+	db 4, PUKE_BLOOD
+	db 10, CURSE
+	db 13, RAGE
+	db 19, SCREECH
+	db 25, PUKE_BLOOD
+	db 31, DOUBLE_EDGE
+	db 34, FLAIL
+	db 40, ENDURE
+	db 46, PUKE_BLOOD
 	db 0 ; no more level-up moves
 
 KangaskhanEvosAttacks:
@@ -1677,6 +1678,7 @@ MrMimeEvosAttacks:
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
+	db EVOLVE_ITEM, METAL_COAT, SCIZOR
 	db EVOLVE_TRADE, METAL_COAT, SCIZOR
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
@@ -1797,6 +1799,7 @@ LaprasEvosAttacks:
 	db 0 ; no more level-up moves
 
 DittoEvosAttacks:
+	db EVOLVE_ITEM, METAL_COAT, TANGELA
 	db 0 ; no more evolutions
 	db 1, TRANSFORM
 	db 0 ; no more level-up moves
@@ -2532,12 +2535,12 @@ SudowoodoEvosAttacks:
 
 PolitoedEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WATER_GUN
-	db 1, HYPNOSIS
-	db 1, DOUBLESLAP
+	db 1, BUBBLEBEAM
+	db 1, PUKE_BLOOD
+	db 1, PAIN_SPLIT
 	db 1, PERISH_SONG
-	db 35, PERISH_SONG
-	db 51, SWAGGER
+	db 35, AURORA_BEAM
+	db 51, PUKE_BLOOD
 	db 0 ; no more level-up moves
 
 HoppipEvosAttacks:
