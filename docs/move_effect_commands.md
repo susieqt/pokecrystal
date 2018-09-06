@@ -103,7 +103,7 @@ Defined in [macros/scripts/battle_commands.asm](/macros/scripts/battle_commands.
 
 ## `$32`: `rechargenextturn`
 
-## `$33`: `mimic`
+
 
 ## `$34`: `metronome`
 

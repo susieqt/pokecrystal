@@ -414,7 +414,6 @@ endc
 MrMimeEggMoves:
 	db FUTURE_SIGHT
 	db HYPNOSIS
-	db MIMIC
 	db -1 ; end
 
 ScytherEggMoves:
@@ -562,7 +561,6 @@ CleffaEggMoves:
 	db AMNESIA
 	db BELLY_DRUM
 	db SPLASH
-	db MIMIC
 	db -1 ; end
 
 IgglybuffEggMoves:

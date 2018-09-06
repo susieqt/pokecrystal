@@ -113,7 +113,7 @@ Moves:
 	move RAGE,         EFFECT_RAGE,               20, NORMAL,   100, 20,   0
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC,  100, 20,   0
 	move NIGHT_SHADE,  EFFECT_LEVEL_DAMAGE,        1, GHOST,    100, 15,   0
-	move MIMIC,        EFFECT_MIMIC,               0, NORMAL,   100, 10,   0
+	move SERVERCRASH,  EFFECT_HYPER_BEAM,        175, PSYCHIC,  100,  5,   0
 	move SCREECH,      EFFECT_DEFENSE_DOWN_2,      0, NORMAL,    85, 40,   0
 	move DOUBLE_TEAM,  EFFECT_EVASION_UP,          0, NORMAL,   100, 15,   0
 	move RECOVER,      EFFECT_HEAL,                0, NORMAL,   100, 20,   0
@@ -235,7 +235,7 @@ Moves:
 	move SACRED_FIRE,  EFFECT_SACRED_FIRE,       100, FIRE,      95,  5,  50
 	move MAGNITUDE,    EFFECT_MAGNITUDE,           1, GROUND,   100, 30,   0
 	move DYNAMICPUNCH, EFFECT_CONFUSE_HIT,       100, FIGHTING,  50,  5, 100
-	move MEGAHORN,     EFFECT_NORMAL_HIT,        120, BUG,       85, 10,   0
+	move COIN_HURL,    EFFECT_PAY_DAY,            90, NORMAL,   100, 10,   0
 	move DRAGONBREATH, EFFECT_PARALYZE_HIT,       60, DRAGON,   100, 20,  30
 	move BATON_PASS,   EFFECT_BATON_PASS,          0, NORMAL,   100, 40,   0
 	move ENCORE,       EFFECT_ENCORE,              0, NORMAL,   100,  5,   0
@@ -265,3 +265,4 @@ Moves:
 	move BEAT_UP,      EFFECT_BEAT_UP,            10, DARK,     100, 10,   0
 	move PUKE_BLOOD,   EFFECT_RECOIL_HIT,        150, POISON,   100, 10,   0
 	move KAMIKAZE,     EFFECT_RECOIL_HIT,        200, FIRE,      90, 11,   0
+	move NAIL_DOWN,    EFFECT_TRAP_TARGET,        90, GHOST,    100, 20,   0
