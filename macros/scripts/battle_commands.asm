@@ -55,7 +55,6 @@ ENDM
 	command paralyze                ; 30
 	command substitute              ; 31
 	command rechargenextturn        ; 32
-	command mimic                   ; 33
 	command metronome               ; 34
 	command leechseed               ; 35
 	command splash                  ; 36
