@@ -1,50 +1,51 @@
-;BattleCommand_Mimic:
-; mimic
-;
-;	call ClearLastMove
-;	call BattleCommand_MoveDelay
-;	ld a, [wAttackMissed]
-;	and a
-;	jr nz, .fail
-;	ld hl, wBattleMonMoves
-;	ldh a, [hBattleTurn]
-;	and a
-;	jr z, .player_turn
-;	ld hl, wEnemyMonMoves
-;.player_turn
-;	call CheckHiddenOpponent
-;	jr nz, .fail
-;	ld a, BATTLE_VARS_LAST_COUNTER_MOVE_OPP
-;	call GetBattleVar
-;	and a
-;	jr z, .fail
-;	cp STRUGGLE
-;	jr z, .fail
-;	ld b, a
-;	ld c, NUM_MOVES
-;.check_already_knows_move
-;	ld a, [hli]
-;	cp b
-;	jr z, .fail
-;	dec c
-;	jr nz, .check_already_knows_move
-;	dec hl
-;.find_mimic
-;	ld a, [hld]
-;	cp MIMIC
-;	jr nz, .find_mimic
-;	inc hl
-;	ld a, BATTLE_VARS_LAST_COUNTER_MOVE_OPP
-;	call GetBattleVar
-;	ld [hl], a
-;	ld [wNamedObjectIndexBuffer], a
-;	ld bc, wBattleMonPP - wBattleMonMoves
-;	add hl, bc
-;	ld [hl], 5
-;	call GetMoveName
-;	call AnimateCurrentMove
-;	ld hl, LearnedMoveText
-;	jp StdBattleTextBox
-;
-;.fail
-;	jp FailMimic
+BattleCommand_Mimic:
+; mirrormove
+
+	call ClearLastMove
+
+	ld a, BATTLE_VARS_MOVE
+	call GetBattleVarAddr
+
+	ld a, BATTLE_VARS_LAST_COUNTER_MOVE_OPP
+	call GetBattleVar
+	and a
+	jr z, .failed
+
+	call CheckUserMove
+	jr nz, .use
+
+.failed
+	call AnimateFailedMove
+
+	ld hl, MirrorMoveFailedText
+	call StdBattleTextBox
+	jp EndMoveEffect
+
+.use
+	ld a, b
+	ld [hl], a
+	ld [wNamedObjectIndexBuffer], a
+
+	push af
+	ld a, BATTLE_VARS_MOVE_ANIM
+	call GetBattleVarAddr
+	ld d, h
+	ld e, l
+	pop af
+
+	dec a
+	call GetMoveData
+	call GetMoveName
+	call CopyName1
+	call CheckUserIsCharging
+	jr nz, .done
+
+	ld a, [wKickCounter]
+	push af
+	call BattleCommand_LowerSub
+	pop af
+	ld [wKickCounter], a
+
+.done
+	call BattleCommand_MoveDelay
+	jp ResetTurn
