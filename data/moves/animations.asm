@@ -102,7 +102,7 @@ BattleAnimations::
 	dw BattleAnim_Rage
 	dw BattleAnim_Teleport
 	dw BattleAnim_NightShade
-	dw BattleAnim_Mimic
+	dw BattleAnim_ServerCrash
 	dw BattleAnim_Screech
 	dw BattleAnim_DoubleTeam
 	dw BattleAnim_Recover
@@ -224,7 +224,7 @@ BattleAnimations::
 	dw BattleAnim_SacredFire
 	dw BattleAnim_Magnitude
 	dw BattleAnim_Dynamicpunch
-	dw BattleAnim_Megahorn
+	dw BattleAnim_CoinHurl
 	dw BattleAnim_Dragonbreath
 	dw BattleAnim_BatonPass
 	dw BattleAnim_Encore
@@ -254,7 +254,7 @@ BattleAnimations::
 	dw BattleAnim_BeatUp
 	dw BattleAnim_PukeBlood
 	dw BattleAnim_Kamikaze
-	dw BattleAnim_254
+	dw BattleAnim_NailDown
 	dw BattleAnim_SweetScent2
 ; $100
 	dw BattleAnim_ThrowPokeBall
@@ -281,7 +281,6 @@ BattleAnimations::
 	dw BattleAnim_HitConfusion
 
 BattleAnim_0:
-BattleAnim_254:
 BattleAnim_MirrorMove:
 	anim_ret
 
@@ -2392,22 +2391,6 @@ BattleAnim_PayDay:
 	anim_wait 64
 	anim_ret
 
-BattleAnim_Mimic:
-	anim_1gfx ANIM_GFX_SPEED
-	anim_obp0 $fc
-	anim_sound 63, 3, SFX_LICK
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $0
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $8
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $10
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $18
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $20
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $28
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $30
-	anim_obj ANIM_OBJ_MIMIC, 132, 44, $38
-	anim_wait 128
-	anim_wait 48
-	anim_ret
-
 BattleAnim_LovelyKiss:
 	anim_2gfx ANIM_GFX_OBJECTS, ANIM_GFX_ANGELS
 	anim_bgeffect ANIM_BG_07, $0, $2, $0
@@ -2512,6 +2495,7 @@ BattleAnim_DrillPeck:
 	anim_wait 16
 	anim_ret
 
+BattleAnim_ServerCrash:
 BattleAnim_Guillotine:
 	anim_1gfx ANIM_GFX_CUT
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $10
@@ -3231,6 +3215,7 @@ BattleAnim_Snore:
 	anim_wait 8
 	anim_ret
 
+BattleAnim_NailDown:
 BattleAnim_Curse:
 	anim_if_param_equal $1, .NotGhost
 	anim_2gfx ANIM_GFX_HIT, ANIM_GFX_OBJECTS
@@ -4084,13 +4069,13 @@ BattleAnim_Dynamicpunch:
 	anim_wait 16
 	anim_ret
 
-BattleAnim_Megahorn:
-	anim_2gfx ANIM_GFX_HORN, ANIM_GFX_HIT
+BattleAnim_CoinHurl:
+	anim_2gfx ANIM_OBJ_PAY_DAY, ANIM_GFX_HIT
 	anim_bgeffect ANIM_BG_1F, $40, $2, $0
 	anim_wait 48
 	anim_bgeffect ANIM_BG_FLASH_INVERTED, $0, $8, $3
-	anim_obj ANIM_OBJ_HORN, 72, 80, $1
-	anim_sound 0, 1, SFX_HORN_ATTACK
+	anim_obj ANIM_OBJ_PAY_DAY, 72, 80, $1
+	anim_sound 0, 1, SFX_PAY_DAY
 	anim_wait 16
 	anim_obj ANIM_OBJ_00, 136, 56, $0
 	anim_wait 16

@@ -101,7 +101,7 @@ MoveDescriptions::
 	dw RageDescription
 	dw TeleportDescription
 	dw NightShadeDescription
-	dw MimicDescription
+	dw ServerCrashDescription
 	dw ScreechDescription
 	dw DoubleTeamDescription
 	dw RecoverDescription
@@ -223,7 +223,7 @@ MoveDescriptions::
 	dw SacredFireDescription
 	dw MagnitudeDescription
 	dw DynamicpunchDescription
-	dw MegahornDescription
+	dw CoinHurlDescription
 	dw DragonbreathDescription
 	dw BatonPassDescription
 	dw EncoreDescription
@@ -253,11 +253,10 @@ MoveDescriptions::
 	dw BeatUpDescription
 	dw PukeBloodDescription
 	dw KamikazeDescription
-	dw MoveFEDescription
+	dw NailDownDescription
 	dw MoveFFDescription
 	dw Move00Description
 
-MoveFEDescription:
 MoveFFDescription:
 Move00Description:
 	db "?@"
@@ -666,9 +665,9 @@ NightShadeDescription:
 	db   "The user's level"
 	next "equals damage HP.@"
 
-MimicDescription:
-	db   "Copies a move used"
-	next "by the foe.@"
+ServerCrashDescription:
+	db   "Deals heavy DMG."
+	next "Requires recharge.@"
 
 ScreechDescription:
 	db   "Sharply reduces"
@@ -1154,9 +1153,9 @@ DynamicpunchDescription:
 	db   "An attack that"
 	next "always confuses.@"
 
-MegahornDescription:
-	db   "A powerful charge"
-	next "attack.@"
+CoinHurlDescription:
+	db   "Hurls coins. Gets"
+	next "them back later.@"
 
 DragonbreathDescription:
 	db   "A strong breath"
@@ -1273,3 +1272,7 @@ PukeBloodDescription:
 KamikazeDescription:
 	db   "Ultimate power,"
 	next "Ultimate recoil@"
+	
+NailDownDescription:
+	db   "Pins the target"
+	next "down. Decent DMG.@"

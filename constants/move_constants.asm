@@ -107,7 +107,7 @@
 	const RAGE         ; 63
 	const TELEPORT     ; 64
 	const NIGHT_SHADE  ; 65
-	const MIMIC        ; 66
+	const SERVERCRASH  ; 66
 	const SCREECH      ; 67
 	const DOUBLE_TEAM  ; 68
 	const RECOVER      ; 69
@@ -229,7 +229,7 @@
 	const SACRED_FIRE  ; dd
 	const MAGNITUDE    ; de
 	const DYNAMICPUNCH ; df
-	const MEGAHORN     ; e0
+	const COIN_HURL    ; e0
 	const DRAGONBREATH ; e1
 	const BATON_PASS   ; e2
 	const ENCORE       ; e3
@@ -259,9 +259,9 @@
 	const BEAT_UP      ; fb
 	const PUKE_BLOOD   ; fc
 	const KAMIKAZE     ; fd
+	const NAIL_DOWN    ; fe
 NUM_ATTACKS EQU const_value + -1
 
-	const MOVE_OR_ANIM_FE ; fe
 
 ; Battle animations use the same constants as the moves up to this point
 	const ANIM_SWEET_SCENT_2     ; ff
