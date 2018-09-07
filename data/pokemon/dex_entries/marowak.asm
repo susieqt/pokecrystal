@@ -1,10 +1,10 @@
-	db "BONEKEEPER@" ; species name
-	dw 303, 990 ; height, weight
+	db "FUNNYBONES@" ; species name
+	dw 303, 660 ; height, weight
 
-	db   "Somewhere in the"
-	next "world is a ceme-"
-	next "tery just for"
+	db   "Constantly cracks"
+	next "jokes to mask its"
+	next "depression."
 
-	page "MAROWAK. It gets"
-	next "its bones from"
-	next "those graves.@"
+	page "Uses powerful"
+	next "BONE-type attacks"
+	next "when not resting.@"

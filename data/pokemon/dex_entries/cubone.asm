@@ -1,10 +1,10 @@
-	db "LONELY@" ; species name
-	dw 104, 140 ; height, weight
+	db "CHILD@" ; species name
+	dw 300, 660 ; height, weight
 
-	db   "It lost its mother"
-	next "after its birth."
-	next "It wears its"
+	db   "Apparently comes "
+	next "from a place "
+	next "called 'Onett'."
 
-	page "mother's skull,"
-	next "never revealing"
-	next "its true face.@"
+	page "Has the ability"
+	next "to use powerful"
+	next "PSI attacks.@"
