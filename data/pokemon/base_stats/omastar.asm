@@ -1,9 +1,9 @@
 	db OMASTAR ; 139
 
-	db  70,  60, 125,  55, 115,  70
+	db  80,  60, 125,  65, 115,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db ROCK, WATER ; type
+	db ROCK, GHOST ; type
 	db 45 ; catch rate
 	db 199 ; base exp
 	db NO_ITEM, NO_ITEM ; items

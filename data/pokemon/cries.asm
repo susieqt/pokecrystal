@@ -142,11 +142,11 @@ PokemonCries::
 	mon_cry CRY_VENONAT,     $03d,  $100 ; JOLTEON
 	mon_cry CRY_VENONAT,     $010,  $0a0 ; FLAREON
 	mon_cry CRY_WEEPINBELL,  $0aa,  $17f ; PORYGON
-	mon_cry CRY_GROWLITHE,   $0f0,  $081 ; OMANYTE
-	mon_cry CRY_GROWLITHE,   $0ff,  $0c0 ; OMASTAR
-	mon_cry CRY_CATERPIE,    $0bb,  $0c0 ; KABUTO
-	mon_cry CRY_FEAROW,      $0ee,  $081 ; KABUTOPS
-	mon_cry CRY_VILEPLUME,   $020,  $170 ; AERODACTYL
+	mon_cry CRY_GROWLITHE,   $0f0,  $0c0 ; OMANYTE
+	mon_cry CRY_GROWLITHE,   $000,  $100 ; OMASTAR
+	mon_cry CRY_CATERPIE,    $0c0,  $0c0 ; KABUTO
+	mon_cry CRY_FEAROW,      $000,  $100 ; KABUTOPS
+	mon_cry CRY_VILEPLUME,   $000,  $100 ; AERODACTYL
 	mon_cry CRY_GRIMER,      $055,  $081 ; SNORLAX
 	mon_cry CRY_RAICHU,      $080,  $0c0 ; ARTICUNO
 	mon_cry CRY_FEAROW,      $0ff,  $100 ; ZAPDOS

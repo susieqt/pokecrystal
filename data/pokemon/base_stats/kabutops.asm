@@ -1,9 +1,9 @@
 	db KABUTOPS ; 141
 
-	db  60, 115, 105,  80,  65,  70
+	db  70, 115, 105,  80,  75,  70
 	;   hp  atk  def  spd  sat  sdf
 
-	db ROCK, WATER ; type
+	db ROCK, GHOST ; type
 	db 45 ; catch rate
 	db 201 ; base exp
 	db NO_ITEM, NO_ITEM ; items

@@ -1890,69 +1890,72 @@ PorygonEvosAttacks:
 	db 0 ; no more level-up moves
 
 OmanyteEvosAttacks:
-	db EVOLVE_LEVEL, 40, OMASTAR
+	db EVOLVE_LEVEL, 30, OMASTAR
 	db 0 ; no more evolutions
-	db 1, CONSTRICT
+	db 1, ANCIENTPOWER
 	db 1, WITHDRAW
 	db 13, BITE
 	db 19, WATER_GUN
-	db 31, LEER
+	db 31, SHADOW_BALL
 	db 37, PROTECT
-	db 49, ANCIENTPOWER
+	db 49, CURSE
 	db 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 OmastarEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CONSTRICT
+	db 1, ANCIENTPOWER
 	db 1, WITHDRAW
 	db 1, BITE
-	db 13, BITE
+	db 13, CRUNCH
 	db 19, WATER_GUN
-	db 31, LEER
-	db 37, PROTECT
+	db 31, SHADOW_BALL
+	db 37, BONE_RUSH
 	db 40, SPIKE_CANNON
-	db 54, ANCIENTPOWER
+	db 54, CURSE
 	db 65, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 KabutoEvosAttacks:
-	db EVOLVE_LEVEL, 40, KABUTOPS
+	db EVOLVE_LEVEL, 30, KABUTOPS
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, HARDEN
+	db 1, ANCIENTPOWER
 	db 10, ABSORB
-	db 19, LEER
-	db 28, SAND_ATTACK
-	db 37, ENDURE
+	db 19, HARDEN
+	db 28, SHADOW_BALL
+	db 37, CURSE
 	db 46, MEGA_DRAIN
-	db 55, ANCIENTPOWER
+	db 55, BONE_RUSH
 	db 0 ; no more level-up moves
 
 KabutopsEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
-	db 1, HARDEN
+	db 1, ANCIENTPOWER
 	db 1, ABSORB
-	db 10, ABSORB
-	db 19, LEER
-	db 28, SAND_ATTACK
-	db 37, ENDURE
+	db 10, BONEMERANG
+	db 19, GLARE
+	db 28, SHADOW_BALL
+	db 37, CURSE
 	db 40, SLASH
-	db 51, MEGA_DRAIN
-	db 65, ANCIENTPOWER
+	db 51, GIGA_DRAIN
+	db 65, BONE_RUSH
 	db 0 ; no more level-up moves
 
 AerodactylEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WING_ATTACK
-	db 8, AGILITY
+	db 8, ANCIENTPOWER
 	db 15, BITE
-	db 22, SUPERSONIC
-	db 29, ANCIENTPOWER
-	db 36, SCARY_FACE
-	db 43, TAKE_DOWN
+	db 22, CRUNCH
+	db 25, SHADOW_BALL
+	db 30, SKULL_BASH
+	db 35, CURSE
+	db 40, BONEMERANG
+	db 45, TAKE_DOWN
 	db 50, HYPER_BEAM
+	db 55, BONE_RUSH
 	db 0 ; no more level-up moves
 
 SnorlaxEvosAttacks:

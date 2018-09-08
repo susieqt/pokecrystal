@@ -1,9 +1,9 @@
 	db KABUTO ; 140
 
-	db  30,  80,  90,  55,  55,  45
+	db  40,  80,  90,  55,  65,  45
 	;   hp  atk  def  spd  sat  sdf
 
-	db ROCK, WATER ; type
+	db ROCK, GHOST ; type
 	db 45 ; catch rate
 	db 119 ; base exp
 	db NO_ITEM, NO_ITEM ; items

@@ -1,4 +1,4 @@
-	db "SPIRAL@" ; species name
+	db "HELIX@" ; species name
 	dw 104, 170 ; height, weight
 
 	db   "In prehistoric"
@@ -6,5 +6,5 @@
 	next "the sea floor,"
 
 	page "eating plankton."
-	next "Its fossils are"
-	next "sometimes found.@"
+	next "Its fossil is"
+	next "well-preserved.@"
