@@ -1,10 +1,10 @@
-	db "PAINTER@" ; species name
-	dw 311, 1280 ; height, weight
+	db "???@" ; species name
+	dw 911, 35072 ; height, weight
 
-	db   "The color of the"
-	next "mysterious fluid"
-	next "secreted from its"
+	db   "3TRAINER#"
+	next "#???'M#"
+	next "COOLTRAINER"
 
-	page "tail is predeter-"
-	next "mined for each"
-	next "SMEARGLE.@"
+	page "The hooked"
+	next "METAPOD"
+	next "attacked!@"

@@ -1,9 +1,9 @@
 	db SMEARGLE ; 235
 
-	db  33,  136,  0,  29,  6,  6
+	db  33,  136,  1,  29,  6,  6
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL ; type
+	db NORMAL, FLYING ; type
 	db 45 ; catch rate
 	db 106 ; base exp
 	db NO_ITEM, NO_ITEM ; items
@@ -17,5 +17,5 @@
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
-	tmhm TOXIC, ICE_BEAM, BLIZZARD, RAGE, THUNDER, EARTHQUAKE, PSYCHIC_M, REST, THUNDER_WAVE, HIDDEN_POWER, CUT, FLY
+	tmhm TOXIC, ICE_BEAM, BLIZZARD, THUNDER, EARTHQUAKE, PSYCHIC_M, REST, HIDDEN_POWER, CUT, FLY
 	; end
