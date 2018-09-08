@@ -233,7 +233,7 @@ PokemonNames::
 	db "DONPHAN@@@"
 	db "POLYGON2@@"
 	db "STANTLER@@"
-	db "SMEARGLE@@"
+	db "MISSINGNO."
 	db "TYROGUE@@@"
 	db "HITMONTOP@"
 	db "PHYGIE@@@@"

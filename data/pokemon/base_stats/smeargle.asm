@@ -1,6 +1,6 @@
 	db SMEARGLE ; 235
 
-	db  55,  20,  35,  75,  20,  45
+	db  33,  136,  0,  29,  6,  6
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
@@ -17,5 +17,5 @@
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
-	tmhm
+	tmhm TOXIC, ICE_BEAM, BLIZZARD, RAGE, THUNDER, EARTHQUAKE, PSYCHIC_M, REST, THUNDER_WAVE, HIDDEN_POWER, CUT, FLY
 	; end

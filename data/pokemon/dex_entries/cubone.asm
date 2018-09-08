@@ -1,5 +1,5 @@
 	db "CHILD@" ; species name
-	dw 300, 660 ; height, weight
+	dw 303, 660 ; height, weight
 
 	db   "Apparently comes "
 	next "from a place "
