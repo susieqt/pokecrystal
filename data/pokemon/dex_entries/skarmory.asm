@@ -1,10 +1,10 @@
-	db "ARMOR BIRD@" ; species name
-	dw 507, 1110 ; height, weight
+	db "UNKNOWN@" ; species name
+	dw 303, 1 ; height, weight
 
-	db   "The feathers that"
-	next "it sheds are very"
-	next "sharp. It is said"
+	db   "Darn! This"
+	next "GHOST can't be"
+	next "identified!"
 
-	page "that people once"
-	next "used the feathers"
-	next "as swords.@"
+	page "It feels like it's"
+	next "missing something,"
+	next "or someone.@"

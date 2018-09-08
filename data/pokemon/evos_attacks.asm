@@ -3083,13 +3083,18 @@ MantineEvosAttacks:
 
 SkarmoryEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, LEER
-	db 1, PECK
-	db 13, SAND_ATTACK
-	db 19, SWIFT
-	db 25, AGILITY
-	db 37, FURY_ATTACK
-	db 49, STEEL_WING
+	db 1, HYPNOSIS
+	db 1, LICK
+	db 1, NIGHTMARE
+	db 8, SHADOW_BALL
+	db 13, MEAN_LOOK
+	db 16, CURSE
+	db 21, NIGHT_SHADE
+	db 26, PSYCHIC_M
+	db 31, BEAT_UP
+	db 39, DREAM_EATER
+	db 48, DESTINY_BOND
+	db 56, SERVERCRASH
 	db 0 ; no more level-up moves
 
 HoundourEvosAttacks:

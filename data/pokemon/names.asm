@@ -225,7 +225,7 @@ PokemonNames::
 	db "ARTILLERY@"
 	db "DELIBIRD@@"
 	db "MANTINE@@@"
-	db "SKARMORY@@"
+	db "GHOST@@@@@"
 	db "HOUNDOUR@@"
 	db "HOUNDOOM@@"
 	db "KINGDRA@@@"
