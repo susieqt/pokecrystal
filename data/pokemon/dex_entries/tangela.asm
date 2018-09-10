@@ -1,10 +1,10 @@
-	db "VINE@" ; species name
-	dw 303, 770 ; height, weight
+	db "TRANSFORM@" ; species name
+	dw 106, 180 ; height, weight
 
-	db   "During battle, it"
-	next "constantly moves"
-	next "the vines that"
+	db   "It screams in"
+	next "constant pain"
+	next "from the"
 
-	page "cover its body in"
-	next "order to annoy its"
-	next "opponent.@"
+	page "METAL COAT stuck"
+	next "to its incredibly"
+	next "sensitive skin.@"

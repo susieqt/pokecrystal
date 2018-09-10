@@ -1,10 +1,10 @@
-	db "TADPOLE@" ; species name
-	dw 303, 440 ; height, weight
+	db "SHARK@" ; species name
+	dw 303, 3500 ; height, weight
 
-	db   "Though it is"
-	next "skilled at walk-"
-	next "ing, it prefers to"
+	db   "The years of abuse"
+	next "turned it into the"
+	next "monster it is now."
 
-	page "live underwater"
-	next "where there is"
-	next "less danger.@"
+	page "Although it looks"
+	next "scary it is actua-"
+	next "lly quite friendly@"

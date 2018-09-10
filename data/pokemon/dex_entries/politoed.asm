@@ -1,10 +1,10 @@
-	db "FROG@" ; species name
+	db "FROG?@" ; species name
 	dw 307, 750 ; height, weight
 
-	db   "When it expands"
-	next "its throat to"
-	next "croak out a tune,"
+	db   "Nobody is entirely"
+	next "sure exactly what"
+	next "this thing is."
 
-	page "nearby POLIWAG and"
-	next "POLIWHIRL gather"
-	next "immediately.@"
+	page "It vomits it's own"
+	next "blood as a strong"
+	next "projectile weapon.@"

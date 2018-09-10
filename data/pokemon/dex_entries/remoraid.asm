@@ -1,10 +1,10 @@
-	db "JET@" ; species name
+	db "GUN@" ; species name
 	dw 200, 260 ; height, weight
 
-	db   "To escape from an"
-	next "attacker, it may"
-	next "shoot water out of"
+	db   "This fish BOOTLEG"
+	next "is very popular"
+	next "in AMERICAN"
 
-	page "its mouth, then"
-	next "use that force to"
-	next "swim backward.@"
+	page "schools. Some"
+	next "people want to"
+	next "ban it, however.@"

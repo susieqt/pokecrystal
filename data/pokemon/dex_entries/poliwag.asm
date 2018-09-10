@@ -1,10 +1,10 @@
-	db "TADPOLE@" ; species name
-	dw 200, 270 ; height, weight
+	db "SUNFISH@" ; species name
+	dw 406, 1000 ; height, weight
 
-	db   "The swirl on its"
-	next "belly is its"
-	next "insides showing"
+	db   "Most underwater"
+	next "BOOTLEGS bully"
+	next "SUNMOLA for being"
 
-	page "through the skin."
-	next "It looks clearer"
-	next "after it eats.@"
+	page "too cute and"
+	next "useless, however,"
+	next "it stays positive.@"

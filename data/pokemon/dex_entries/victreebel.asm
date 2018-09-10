@@ -1,10 +1,10 @@
 	db "FLYCATCHER@" ; species name
-	dw 507, 340 ; height, weight
+	dw 507, 800 ; height, weight
 
-	db   "Once ingested into"
-	next "this #MON's"
-	next "body, even the"
+	db   "Having suddenly"
+	next "gained sentience"
+	next "from evolving,"
 
-	page "hardest object"
-	next "will melt into"
-	next "nothing.@"
+	page "this BOOTLEG"
+	next "wonders why it"
+	next "is still alive.@"

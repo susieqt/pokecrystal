@@ -1,10 +1,10 @@
-	db "KISS@" ; species name
+	db "GHOSTPIG@" ; species name
 	dw 104, 130 ; height, weight
 
-	db   "The sensitivity of"
-	next "its lips develops"
-	next "most quickly."
+	db   "Apparently it"
+	next "comes from a"
+	next "land above the"
 
-	page "It uses them to"
-	next "try to identify"
-	next "unknown objects.@"
+	page "clouds, although"
+	next "no official reco-"
+	next "rds prove this.@"

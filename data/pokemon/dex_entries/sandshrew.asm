@@ -1,10 +1,10 @@
-	db "MOUSE@" ; species name
-	dw 200, 260 ; height, weight
+	db "VOODOO@" ; species name
+	dw 100, 100 ; height, weight
 
-	db   "It prefers dry,"
-	next "sandy places"
-	next "because it uses"
+	db   "It holds immense"
+	next "power, but is"
+	next "cursed. If it's"
 
-	page "the sand to"
-	next "protect itself"
-	next "when threatened.@"
+	page "curse is activated"
+	next "it may never reach"
+	next "its full potential@"

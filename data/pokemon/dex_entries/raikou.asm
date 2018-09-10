@@ -1,10 +1,10 @@
-	db "THUNDER@" ; species name
+	db "EDGY@" ; species name
 	dw 603, 3920 ; height, weight
 
-	db   "This rough #MON"
-	next "stores energy"
-	next "inside its body,"
+	db   "This BOOTLEG"
+	next "reflects what a"
+	next "creature known as"
 
-	page "then sweeps across"
-	next "the land, shooting"
-	next "off electricity.@"
+	page "RAIKOU looked like"
+	next "during an edgy"
+	next "phase in 1997.@"

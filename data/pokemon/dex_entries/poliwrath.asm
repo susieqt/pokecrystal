@@ -1,10 +1,10 @@
-	db "TADPOLE@" ; species name
-	dw 403, 1190 ; height, weight
+	db "LEVIATHAN@" ; species name
+	dw 803, 5000 ; height, weight
 
-	db   "It can use its"
-	next "well-developed"
-	next "arms and legs to"
+	db   "It has come to"
+	next "realize other"
+	next "people's opinions"
 
-	page "run on the surface"
-	next "of the water for a"
-	next "split second.@"
+	page "don't matter, and"
+	next "is much happier"
+	next "as a result.@"

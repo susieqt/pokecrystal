@@ -1,10 +1,10 @@
-	db "PIG@" ; species name
-	dw 104, 140 ; height, weight
+	db "HUNTER@" ; species name
+	dw 204, 500 ; height, weight
 
-	db   "It uses the tip of"
-	next "its nose to dig"
-	next "for food. Its nose"
+	db   "It wears the pelt"
+	next "of an animal to"
+	next "keep warm."
 
-	page "is so tough that"
-	next "even frozen ground"
-	next "poses no problem.@"
+	page "No one has ever"
+	next "seen what it looks"
+	next "like underneath.@"

@@ -1,10 +1,10 @@
-	db "VOLCANO@" ; species name
+	db "EDGY@" ; species name
 	dw 607, 4370 ; height, weight
 
-	db   "This brawny"
-	next "#MON courses"
+	db   "This scrawny"
+	next "BOOTLEG courses"
 	next "around the earth,"
 
-	page "spouting flames"
-	next "hotter than a"
-	next "volcano's magma.@"
+	page "trying to avoid"
+	next "the wrath of"
+	next "DEVIANTART FURRIES@"

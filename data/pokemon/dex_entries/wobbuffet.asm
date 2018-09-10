@@ -1,10 +1,10 @@
-	db "PATIENT@" ; species name
-	dw 403, 630 ; height, weight
+	db "PALINDROME@" ; species name
+	dw 205, 450 ; height, weight
 
-	db   "In order to con-"
-	next "ceal its black"
-	next "tail, it lives in"
+	db   "One of them is"
+	next "good, and the"
+	next "other is evil."
 
-	page "a dark cave and"
-	next "only moves about"
-	next "at night.@"
+	page "They constantly"
+	next "struggle to over-"
+	next "power eachother.@"

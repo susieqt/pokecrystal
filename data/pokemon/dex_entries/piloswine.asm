@@ -1,10 +1,10 @@
-	db "SWINE@" ; species name
+	db "HUNTER@" ; species name
 	dw 307, 1230 ; height, weight
 
-	db   "Although its legs"
-	next "are short, its"
-	next "rugged hooves"
+	db   "It fiercely atta-"
+	next "cks anything that"
+	next "attempts to take"
 
-	page "prevent it from"
-	next "slipping, even on"
-	next "icy ground.@"
+	page "it's precious fur"
+	next "coat. It's true"
+	next "form is unknown.@"

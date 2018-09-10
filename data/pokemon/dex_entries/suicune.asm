@@ -1,10 +1,10 @@
-	db "AURORA@" ; species name
+	db "EDGY@" ; species name
 	dw 607, 4120 ; height, weight
 
-	db   "This divine"
-	next "#MON blows"
-	next "around the world,"
+	db   "This angsty"
+	next "BOOTLEG never"
+	next "got over the"
 
-	page "always in search"
-	next "of a pure"
-	next "reservoir.@"
+	page "emo phase it"
+	next "went through"
+	next "back in 1997.@"

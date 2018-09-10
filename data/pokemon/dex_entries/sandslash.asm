@@ -1,10 +1,10 @@
-	db "MOUSE@" ; species name
+	db "CURSED@" ; species name
 	dw 303, 650 ; height, weight
 
-	db   "Adept at climbing"
-	next "trees, it rolls"
-	next "into a spiny ball,"
+	db   "With it's curse"
+	next "activated, it can"
+	next "no longer gain"
 
-	page "then attacks its"
-	next "enemies from"
-	next "above.@"
+	page "any more power."
+	next "It is much more"
+	next "durable, however.@"

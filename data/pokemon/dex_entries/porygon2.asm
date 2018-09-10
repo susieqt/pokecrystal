@@ -1,10 +1,10 @@
-	db "VIRTUAL@" ; species name
+	db "SPURDO@" ; species name
 	dw 200, 720 ; height, weight
 
-	db   "This manmade"
-	next "#MON evolved"
-	next "from the latest"
+	db   "Dhis manmade"
+	next "BOODLEG ebolbed:DD"
+	next "from dhe ladesd"
 
-	page "technology. It"
-	next "may have unprog-"
-	next "rammed reactions.@"
+	page "deghnology. Id"
+	next "may ead your"
+	next "borgers o fug :DDD@"
