@@ -2917,14 +2917,14 @@ ShuckleEvosAttacks:
 HeracrossEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SLAM
-	db 1, AGILITY
-	db 6, IRON_HEAD
-	db 12, ENDURE
-	db 19, FURY_ATTACK
-	db 27, COUNTER
+	db 1, SMOKESCREEN
+	db 6, HEADBUTT
+	db 12, SMOG
+	db 19, IRON_HEAD
+	db 27, BODY_SLAM
 	db 35, TAKE_DOWN
-	db 44, REVERSAL
-;	db 54, MEGAHORN
+	db 44, AGILITY
+	db 54, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 SneaselEvosAttacks:

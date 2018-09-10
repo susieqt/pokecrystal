@@ -1,10 +1,10 @@
-	db "BIG HORN@" ; species name
-	dw 407, 1570 ; height, weight
+	db "SAMPSON@" ; species name
+	dw 400, 850 ; height, weight
 
-	db   "The round balls"
-	next "found on the"
-	next "fallen antlers can"
+	db   "It's full name is"
+	next "''Bort 'Pant-"
+	next "Eater' Sampson."
 
-	page "be ground into a"
-	next "powder that aids"
-	next "in sleeping.@"
+	page "It claims it's"
+	next "trousers are"
+	next "highly nutritious.@"

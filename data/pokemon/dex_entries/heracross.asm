@@ -1,10 +1,10 @@
-	db "SINGLEHORN@" ; species name
-	dw 411, 1190 ; height, weight
+	db "MADTITAN@" ; species name
+	dw 1107, 20000 ; height, weight
 
-	db   "With its Herculean"
-	next "powers, it can"
-	next "easily throw arou-"
+	db   "THANOS CAR"
+	next " "
+	next "BOTTOM TEXT"
 
-	page "nd an object that"
-	next "is 100 times its"
-	next "own weight.@"
+	page "Although it looks"
+	next "like a truck, it"
+	next "is somehow a car.@"
