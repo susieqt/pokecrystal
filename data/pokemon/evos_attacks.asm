@@ -3049,7 +3049,7 @@ RemoraidEvosAttacks:
 	db 22, PSYBEAM
 	db 22, AURORA_BEAM
 	db 22, BUBBLEBEAM
-	db 33, FOCUS_ENERGY
+	db 33, BARRAGE
 	db 44, ICE_BEAM
 	db 55, HYPER_BEAM
 	db 0 ; no more level-up moves
@@ -3057,12 +3057,12 @@ RemoraidEvosAttacks:
 OctilleryEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
-	db 11, CONSTRICT
+	db 11, PIN_MISSILE
 	db 22, PSYBEAM
 	db 22, AURORA_BEAM
-	db 22, BUBBLEBEAM
+	db 22, SLUDGE_BOMB
 	db 25, OCTAZOOKA
-	db 38, FOCUS_ENERGY
+	db 38, SPIKE_CANNON
 	db 54, ICE_BEAM
 	db 70, HYPER_BEAM
 	db 0 ; no more level-up moves
@@ -3298,12 +3298,12 @@ BlisseyEvosAttacks:
 RaikouEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BITE
-	db 1, LEER
-	db 11, THUNDERSHOCK
+	db 1, BEAT_UP
+	db 11, THUNDERBOLT
 	db 21, ROAR
 	db 31, QUICK_ATTACK
 	db 41, SPARK
-	db 51, REFLECT
+	db 51, PURSUIT
 	db 61, CRUNCH
 	db 71, THUNDER
 	db 0 ; no more level-up moves
@@ -3311,7 +3311,7 @@ RaikouEvosAttacks:
 EnteiEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BITE
-	db 1, LEER
+	db 1, TAIL_WHIP
 	db 11, EMBER
 	db 21, ROAR
 	db 31, FIRE_SPIN
@@ -3324,7 +3324,7 @@ EnteiEvosAttacks:
 SuicuneEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BITE
-	db 1, LEER
+	db 1, CUT
 if _CRYSTAL
 	db 11, BUBBLEBEAM
 	db 21, RAIN_DANCE
@@ -3336,8 +3336,8 @@ else
 	db 31, GUST
 	db 41, BUBBLEBEAM
 endc
-	db 51, MIST
-	db 61, MIRROR_COAT
+	db 51, CURSE
+	db 61, FAINT_ATTACK
 	db 71, HYDRO_PUMP
 	db 0 ; no more level-up moves
 

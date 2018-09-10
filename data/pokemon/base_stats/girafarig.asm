@@ -1,9 +1,9 @@
 	db GIRAFARIG ; 203
 
-	db  70,  80,  65,  85,  90,  65
+	db  70, 100,  65, 100, 110,  65
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, PSYCHIC ; type
+	db DARK, PSYCHIC ; type
 	db 60 ; catch rate
 	db 149 ; base exp
 	db NO_ITEM, NO_ITEM ; items
