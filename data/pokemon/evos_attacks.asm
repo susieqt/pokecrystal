@@ -2916,8 +2916,8 @@ ShuckleEvosAttacks:
 
 HeracrossEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, LEER
+	db 1, SLAM
+	db 1, AGILITY
 	db 6, HORN_ATTACK
 	db 12, ENDURE
 	db 19, FURY_ATTACK
@@ -3181,12 +3181,15 @@ Porygon2EvosAttacks:
 StantlerEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 8, LEER
+	db 10, MILK_DRINK
 	db 15, HYPNOSIS
-	db 23, STOMP
-	db 31, SAND_ATTACK
+	db 20, STOMP
+	db 25, SPIKES
+	db 30, BITE
+	db 35, SPIKE_CANNON
 	db 40, TAKE_DOWN
-	db 49, CONFUSE_RAY
+	db 45, HEADBUTT
+	db 50, SKULL_BASH
 	db 0 ; no more level-up moves
 
 SmeargleEvosAttacks:
