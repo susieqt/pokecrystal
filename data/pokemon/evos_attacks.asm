@@ -3185,7 +3185,7 @@ StantlerEvosAttacks:
 	db 15, HYPNOSIS
 	db 20, STOMP
 	db 25, SPIKES
-	db 30, BITE
+	db 30, PUKE_BLOOD
 	db 35, SPIKE_CANNON
 	db 40, TAKE_DOWN
 	db 45, HEADBUTT
