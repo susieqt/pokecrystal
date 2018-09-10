@@ -216,7 +216,7 @@
 	const MILK_DRINK   ; d0
 	const SPARK        ; d1
 	const FURY_CUTTER  ; d2
-	const STEEL_WING   ; d3
+	const IRON_HEAD    ; d3
 	const MEAN_LOOK    ; d4
 	const ATTRACT      ; d5
 	const SLEEP_TALK   ; d6

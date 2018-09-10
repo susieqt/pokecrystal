@@ -211,7 +211,7 @@ BattleAnimations::
 	dw BattleAnim_MilkDrink
 	dw BattleAnim_Spark
 	dw BattleAnim_FuryCutter
-	dw BattleAnim_SteelWing
+	dw BattleAnim_IronHead
 	dw BattleAnim_MeanLook
 	dw BattleAnim_Attract
 	dw BattleAnim_SleepTalk
@@ -3840,12 +3840,12 @@ BattleAnim_FuryCutter:
 	anim_jumpuntil .loop
 	anim_ret
 
-BattleAnim_SteelWing:
+BattleAnim_IronHead:
 	anim_1gfx ANIM_GFX_REFLECT
 	anim_obp0 $0
 	anim_sound 0, 0, SFX_RAGE
 	anim_call BattleAnim_FollowEnemyFeet_0
-	anim_call BattleAnim_SteelWing_branch_cbc43
+	anim_call BattleAnim_IronHead_branch_cbc43
 	anim_call BattleAnim_ShowMon_0
 	anim_1gfx ANIM_GFX_HIT
 	anim_resetobp0
@@ -4747,7 +4747,7 @@ BattleAnim_Toxic_branch_cbc35:
 BattleAnim_Harden_branch_cbc43:
 BattleAnim_IronTail_branch_cbc43:
 BattleAnim_MetalClaw_branch_cbc43:
-BattleAnim_SteelWing_branch_cbc43:
+BattleAnim_IronHead_branch_cbc43:
 	anim_sound 0, 0, SFX_SHINE
 	anim_bgeffect ANIM_BG_17, $0, $1, $40
 	anim_wait 8

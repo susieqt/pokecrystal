@@ -222,7 +222,7 @@ Moves:
 	move MILK_DRINK,   EFFECT_HEAL,                0, NORMAL,   100, 10,   0
 	move SPARK,        EFFECT_PARALYZE_HIT,       65, ELECTRIC, 100, 20,  30
 	move FURY_CUTTER,  EFFECT_FURY_CUTTER,        10, BUG,       95, 20,   0
-	move STEEL_WING,   EFFECT_DEFENSE_UP_HIT,     70, STEEL,     90, 25,  10
+	move IRON_HEAD,    EFFECT_FLINCH_HIT,         80, STEEL,     10, 15,  30
 	move MEAN_LOOK,    EFFECT_MEAN_LOOK,           0, NORMAL,   100,  5,   0
 	move ATTRACT,      EFFECT_ATTRACT,             0, NORMAL,   100, 15,   0
 	move SLEEP_TALK,   EFFECT_SLEEP_TALK,          0, NORMAL,   100, 10,   0

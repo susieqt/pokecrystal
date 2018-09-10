@@ -210,7 +210,7 @@ MoveDescriptions::
 	dw MilkDrinkDescription
 	dw SparkDescription
 	dw FuryCutterDescription
-	dw SteelWingDescription
+	dw IronHeadDescription
 	dw MeanLookDescription
 	dw AttractDescription
 	dw SleepTalkDescription
@@ -1101,9 +1101,9 @@ FuryCutterDescription:
 	db   "Successive hits"
 	next "raise power.@"
 
-SteelWingDescription:
-	db   "Stiff wings strike"
-	next "the foe.@"
+IronHeadDescription:
+	db   "An attack that may"
+	next "cause flinching.@"
 
 MeanLookDescription:
 	db   "Prevents fleeing"

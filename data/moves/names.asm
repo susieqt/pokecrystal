@@ -209,7 +209,7 @@ MoveNames::
 	db "MILK DRINK@"
 	db "SPARK@"
 	db "FURY CUTTER@"
-	db "STEEL WING@"
+	db "IRON HEAD@"
 	db "MEAN LOOK@"
 	db "ATTRACT@"
 	db "SLEEP TALK@"
