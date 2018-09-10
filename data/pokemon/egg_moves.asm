@@ -47,7 +47,7 @@ PidgeyEggMoves:
 	db FAINT_ATTACK
 	db FORESIGHT
 if !_CRYSTAL
-	db STEEL_WING
+	db IRON_HEAD
 endc
 	db -1 ; end
 
@@ -258,7 +258,7 @@ SlowpokeEggMoves:
 
 FarfetchDEggMoves:
 if !_CRYSTAL
-	db STEEL_WING
+	db IRON_HEAD
 endc
 	db FORESIGHT
 	db MIRROR_MOVE
@@ -461,7 +461,7 @@ AerodactylEggMoves:
 	db PURSUIT
 	db FORESIGHT
 if !_CRYSTAL
-	db STEEL_WING
+	db IRON_HEAD
 endc
 	db -1 ; end
 
@@ -582,7 +582,7 @@ NatuEggMoves:
 	db DRILL_PECK
 	db QUICK_ATTACK
 	db FAINT_ATTACK
-	db STEEL_WING
+	db IRON_HEAD
 	db -1 ; end
 
 MareepEggMoves:

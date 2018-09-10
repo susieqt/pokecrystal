@@ -2918,7 +2918,7 @@ HeracrossEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SLAM
 	db 1, AGILITY
-	db 6, HORN_ATTACK
+	db 6, IRON_HEAD
 	db 12, ENDURE
 	db 19, FURY_ATTACK
 	db 27, COUNTER

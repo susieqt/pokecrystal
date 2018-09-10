@@ -866,7 +866,7 @@ BattleTowerMons2:
 
 	db SCIZOR
 	db FOCUS_BAND
-	db STEEL_WING, SLASH, TOXIC, SANDSTORM
+	db IRON_HEAD, SLASH, TOXIC, SANDSTORM
 	dw 0 ; OT ID
 	dt 8000 ; Exp
 	; Stat exp
@@ -1886,7 +1886,7 @@ BattleTowerMons4:
 
 	db SCIZOR
 	db SCOPE_LENS
-	db SLASH, STEEL_WING, PURSUIT, HYPER_BEAM
+	db SLASH, IRON_HEAD, PURSUIT, HYPER_BEAM
 	dw 0 ; OT ID
 	dt 64000 ; Exp
 	; Stat exp
@@ -2591,7 +2591,7 @@ BattleTowerMons5:
 
 	db SKARMORY
 	db GOLD_BERRY
-	db SANDSTORM, FLY, STEEL_WING, TOXIC
+	db SANDSTORM, FLY, IRON_HEAD, TOXIC
 	dw 0 ; OT ID
 	dt 125000 ; Exp
 	; Stat exp
@@ -3036,7 +3036,7 @@ BattleTowerMons6:
 
 	db SKARMORY
 	db MIRACLEBERRY
-	db STEEL_WING, FLY, TOXIC, PROTECT
+	db IRON_HEAD, FLY, TOXIC, PROTECT
 	dw 0 ; OT ID
 	dt 216000 ; Exp
 	; Stat exp
@@ -4186,7 +4186,7 @@ BattleTowerMons8:
 
 	db SKARMORY
 	db QUICK_CLAW
-	db STEEL_WING, FLY, MUD_SLAP, TOXIC
+	db IRON_HEAD, FLY, MUD_SLAP, TOXIC
 	dw 0 ; OT ID
 	dt 512000 ; Exp
 	; Stat exp
@@ -4212,7 +4212,7 @@ BattleTowerMons8:
 
 	db MOLTRES
 	db CHARCOAL
-	db FLAMETHROWER, SKY_ATTACK, STEEL_WING, HYPER_BEAM
+	db FLAMETHROWER, SKY_ATTACK, IRON_HEAD, HYPER_BEAM
 	dw 0 ; OT ID
 	dt 512000 ; Exp
 	; Stat exp
@@ -4787,7 +4787,7 @@ BattleTowerMons9:
 
 	db SKARMORY
 	db QUICK_CLAW
-	db SANDSTORM, STEEL_WING, TOXIC, RETURN
+	db SANDSTORM, IRON_HEAD, TOXIC, RETURN
 	dw 0 ; OT ID
 	dt 729000 ; Exp
 	; Stat exp
@@ -5206,7 +5206,7 @@ BattleTowerMons10:
 
 	db FEAROW
 	db KINGS_ROCK
-	db DRILL_PECK, STEEL_WING, HYPER_BEAM, MUD_SLAP
+	db DRILL_PECK, IRON_HEAD, HYPER_BEAM, MUD_SLAP
 	dw 0 ; OT ID
 	dt 1000000 ; Exp
 	; Stat exp
@@ -5284,7 +5284,7 @@ BattleTowerMons10:
 
 	db SCIZOR
 	db QUICK_CLAW
-	db STEEL_WING, HYPER_BEAM, SLASH, TOXIC
+	db IRON_HEAD, HYPER_BEAM, SLASH, TOXIC
 	dw 0 ; OT ID
 	dt 1000000 ; Exp
 	; Stat exp
