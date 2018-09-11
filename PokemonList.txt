@@ -1,5 +1,16 @@
+This is a list of all the pokemon in the romhack, to be edited
+when new ones are added/replaced. ideally at least most
+of this list will be replaced with new bootleg ones by the end.
+This is to be used for reference to see what pokemon are added
+to help with designing areas/themes/etc, or just to see what's
+new, or to use as reference when designing new bootlegs!
+
+Everything without a * under "Claimed" is the original
+pokemon, and is fit to be replaced, so if you want to come up
+with a unique bootleg design, look for one of those to replace!
+
 JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
-------------------------------------------------
+--------------------------------------------------------------
 #001  #152  Chikorita		Grass  
 #002  #153  Bayleef			Grass  
 #003  #154  Meganium		Grass  
@@ -47,11 +58,11 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #045  #040  Wigglytuff		Normal  
 #046  #175  Togepi			Normal  
 #047  #176  Togetic			Normal  	Flying  
-#048  #027  Sandshrew		Ground  
-#049  #028  Sandslash		Ground  
+#048  #027  Kurstraw		Ghost						*  
+#049  #028  Pangshi			Ghost  		Dark			*
 #050  #023  Ekans			Poison  
 #051  #024  Arbok			Poison  
-#052  #206  Dunsparce		Normal  
+#052  #206  Bomseel			Water		Fire			*
 #053  #179  Mareep			Electric  
 #054  #180  Flaaffy			Electric  
 #055  #181  Ampharos		Electric  
@@ -65,16 +76,16 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #063  #208  Steelix			Steel		Ground  
 #064  #069  Bellsprout		Grass		Poison  
 #065  #070  Weepinbell		Grass		Poison  
-#066  #071  Victreebel		Grass		Poison  
+#066  #071  Victreebel(temp)Grass		Poison  		*
 #067  #187  Hoppip			Grass		Flying  
 #068  #188  Skiploom		Grass		Flying  
 #069  #189  Jumpluff		Grass		Flying  
 #070  #046  Paras			Bug			Grass  
 #071  #047  Parasect		Bug			Grass  
-#072  #060  Poliwag			Water  
-#073  #061  Poliwhirl		Water  
-#074  #062  Poliwrath		Water		Fighting  
-#075  #186  Politoed		Water  
+#072  #060  Sunmola			Water  						*
+#073  #061  Anchorage		Water  		Steel			*
+#074  #062  Grotess			Water		Dark			*  
+#075  #186  Tentaquil		Water  						*
 #076  #129  Magikarp		Water  
 #077  #130  Gyarados		Water		Flying  
 #078  #118  Goldeen			Water  
@@ -100,19 +111,19 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #098  #032  Nidoran♂(M)		Poison  
 #099  #033  Nidorino		Poison  
 #100  #034  Nidoking		Poison		Ground  
-#101  #193  Yanma			Bug			Flying  
+#101  #193  Turbann			Normal						*
 #102  #191  Sunkern			Grass  
 #103  #192  Sunflora		Grass  
 #104  #102  Exeggcute		Grass		Psychic  
 #105  #103  Exeggutor		Grass		Psychic  
 #106  #185  Sudowoodo		Rock  
-#107  #202  Wobbuffet		Psychic  
+#107  #202  Twinz			Ghost	  	Dark			*
 #108  #048  Venonat			Bug			Poison  
 #109  #049  Venomoth		Bug			Poison  
 #110  #123  Scyther			Bug			Flying  
 #111  #212  Scizor			Bug			Steel  
 #112  #127  Pinsir			Bug  
-#113  #214  Heracross		Bug			Fighting  
+#113  #214  THANOSCAR		Steel		Normal  		*
 #114  #109  Koffing			Poison  
 #115  #110  Weezing			Poison  
 #116  #088  Grimer			Poison  
@@ -121,14 +132,14 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #119  #082  Magneton		Electric	Steel  
 #120  #100  Voltorb			Electric  
 #121  #101  Electrode		Electric  
-#122  #190  Aipom			Normal  
+#122  #190  Meowoth			Normal  	Psychic			*
 #123  #209  Snubbull		Normal  
 #124  #210  Granbull		Normal  
 #125  #037  Vulpix			Fire  
 #126  #038  Ninetales		Fire  
-#127  #058  Growlithe		Fire  
-#128  #059  Arcanine		Fire  
-#129  #234  Stantler		Normal  
+#127  #058  Samba			Fire  		Grass			*
+#128  #059  TBD				?	  		?				*?
+#129  #234  Panteater		Normal  					*
 #130  #183  Marill			Water  
 #131  #184  Azumarill		Water  
 #132  #050  Diglett			Ground  
@@ -137,8 +148,8 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #135  #057  Primeape		Fighting  
 #136  #052  Meowth			Normal  
 #137  #053  Persian			Normal  
-#138  #054  Psyduck			Water  
-#139  #055  Golduck			Water  
+#138  #054  Jonduck			Water  						*
+#139  #055  Lacqua			Water  		Psychic			*
 #140  #066  Machop			Fighting  
 #141  #067  Machoke			Fighting  
 #142  #068  Machamp			Fighting  
@@ -146,18 +157,18 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #144  #106  Hitmonlee		Fighting  
 #145  #107  Hitmonchan		Fighting  
 #146  #237  Hitmontop		Fighting  
-#147  #203  Girafarig		Normal		Psychic  
+#147  #203  Girafarig		Dark		Psychic  		*
 #148  #128  Tauros			Normal  
 #149  #241  Miltank			Normal  
 #150  #240  Magby			Fire  
 #151  #126  Magmar			Fire  
-#152  #238  Smoochum		Ice			Psychic  
-#153  #124  Jynx			Ice			Psychic  
+#152  #238  Phygie			Ghost		Psychic  		*
+#153  #124  KingPhyg		Ghost		Dark			*
 #154  #239  Elekid			Electric  
 #155  #125  Electabuzz		Electric  
 #156  #122  Mr. Mime		Psychic  
-#157  #235  Smeargle		Normal  
-#158  #083  Farfetch'd		Normal		Flying  
+#157  #235  MissingNo.		Normal  	Flying			*
+#158  #083  Nimbat			Normal		Flying 			* 
 #159  #177  Natu			Psychic		Flying  
 #160  #178  Xatu			Psychic		Flying  
 #161  #211  Qwilfish		Water		Poison  
@@ -171,14 +182,14 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #169  #090  Shellder		Water  
 #170  #091  Cloyster		Water		Ice  
 #171  #222  Corsola			Water		Rock  
-#172  #223  Remoraid		Water  
-#173  #224  Octillery		Water  
+#172  #223  Revolvraid		Water  						*
+#173  #224  Artillery		Water  						*
 #174  #170  Chinchou		Water		Electric  
 #175  #171  Lanturn			Water		Electric  
 #176  #086  Seel			Water  
 #177  #087  Dewgong			Water		Ice  
 #178  #108  Lickitung		Normal  
-#179  #114  Tangela			Grass  
+#179  #114  Animon			Normal		Steel			*
 #180  #133  Eevee			Normal  
 #181  #134  Vaporeon		Water  
 #182  #135  Jolteon			Electric  
@@ -187,23 +198,23 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #185  #197  Umbreon			Dark  
 #186  #116  Horsea			Water  
 #187  #117  Seadra			Water  
-#188  #230  Kingdra			Water		Dragon  
+#188  #230  Kingdra (temp)	Dark		Dragon  		*
 #189  #207  Gligar			Ground		Flying  
 #190  #225  Delibird		Ice			Flying  
-#191  #220  Swinub			Ice			Ground  
-#192  #221  Piloswine		Ice			Ground  
+#191  #220  Wolfman			Ice			Fighting		* 
+#192  #221  Warwolf			Ice			Fighting		*
 #193  #216  Teddiursa		Normal  
 #194  #217  Ursaring		Normal  
 #195  #231  Phanpy			Ground  
 #196  #232  Donphan			Ground  
 #197  #226  Mantine			Water		Flying  
-#198  #227  Skarmory		Steel		Flying  
+#198  #227  Ghost			Ghost		Dark  			*
 #199  #084  Doduo			Normal		Flying  
 #200  #085  Dodrio			Normal		Flying  
 #201  #077  Ponyta			Fire  
 #202  #078  Rapidash		Fire  
-#203  #104  Cubone			Ground  
-#204  #105  Marowak			Ground  
+#203  #104  Ness			Normal  	Psychic			*
+#204  #105  Sans			Ghost  		Psychic			*
 #205  #115  Kangaskhan		Normal  
 #206  #111  Rhyhorn			Ground		Rock  
 #207  #112  Rhydon			Ground		Rock  
@@ -214,16 +225,16 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #212  #219  Magcargo		Fire		Rock  
 #213  #215  Sneasel			Dark		Ice  
 #214  #200  Misdreavus		Ghost  
-#215  #137  Porygon			Normal  
-#216  #233  Porygon2		Normal  
+#215  #137  Polygon			Normal  					*
+#216  #233  Bolygon :D		Normal  					*
 #217  #113  Chansey			Normal  
 #218  #242  Blissey			Normal  
 #219  #131  Lapras			Water		Ice  
-#220  #138  Omanyte			Rock		Water  
-#221  #139  Omastar			Rock		Water  
-#222  #140  Kabuto			Rock		Water  
-#223  #141  Kabutops		Rock		Water  
-#224  #142  Aerodactyl		Rock		Flying  
+#220  #138  Helix Fossil	Rock		Ghost  			*
+#221  #139  Helix Fossil	Rock		Ghost  			*
+#222  #140  Dome Fossil		Rock		Ghost  			*
+#223  #141  Dome Fossil		Rock		Ghost  			*
+#224  #142  Fossil			Rock		Ghost  			*
 #225  #143  Snorlax			Normal  
 #226  #001  Bulbasaur		Grass		Poison  
 #227  #002  Ivysaur			Grass		Poison  
@@ -237,9 +248,9 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #235  #144  Articuno		Ice			Flying  
 #236  #145  Zapdos			Electric	Flying  
 #237  #146  Moltres			Fire		Flying  
-#238  #243  Raikou			Electric  
-#239  #244  Entei			Fire  
-#240  #245  Suicune			Water  
+#238  #243  Raikyou			Electric  					*
+#239  #244  Hentei			Fire  						*
+#240  #245  Suicidune		Water  						*
 #241  #147  Dratini			Dragon  
 #242  #148  Dragonair		Dragon  
 #243  #149  Dragonite		Dragon		Flying  
@@ -248,6 +259,6 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #246  #248  Tyranitar		Rock		Dark  
 #247  #249  Lugia			Psychic		Flying  
 #248  #250  Ho-Oh			Fire		Flying  
-#249  #150  Mewtwo			Psychic  
+#249  #150  Luigi			Psychic  	Electric		*
 #250  #151  Mew				Psychic  
 #251  #251  Celebi			Psychic		Grass  
