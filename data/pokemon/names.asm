@@ -56,7 +56,7 @@ PokemonNames::
 	db "LACQUA@@@@"
 	db "MANKEY@@@@"
 	db "PRIMEAPE@@"
-	db "GROWLITHE@"
+	db "SAMBA@@@@@"
 	db "ARCANINE@@"
 	db "SUNMOLA@@@"
 	db "ANCHORAGE@"
