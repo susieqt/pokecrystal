@@ -49,7 +49,7 @@ ItemDescriptions:
 	dw SodaPopDesc
 	dw LemonadeDesc
 	dw XAttackDesc
-	dw TeruSama4Desc
+	dw DawnStoneDesc
 	dw XDefendDesc
 	dw XSpeedDesc
 	dw XSpecialDesc
@@ -449,8 +449,9 @@ XAttackDesc:
 	db   "Raises ATTACK."
 	next "(1 BTL)@"
 
-TeruSama4Desc:
-	db   "?@"
+DawnStoneDesc:
+	db   "Evolves certain"
+	next "kinds of BOOTLEG.@"
 
 XDefendDesc:
 	db   "Raises DEFENSE."
