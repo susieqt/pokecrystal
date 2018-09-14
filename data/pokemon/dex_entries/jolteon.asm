@@ -1,10 +1,10 @@
-	db "LIGHTNING@" ; species name
-	dw 207, 540 ; height, weight
+	db "HEDGEHOG@" ; species name
+	dw 504, 1200 ; height, weight
 
-	db   "The negatively"
-	next "charged ions"
-	next "generated in its"
+	db   "The original"
+	next "SONICHU. He is"
+	next "an amalgamation of"
 
-	page "fur create a"
-	next "constant sparking"
-	next "noise.@"
+	page "SONIC and PIKACHU."
+	next "Original Character."
+	next "Don't use THIEF!@"

@@ -1,10 +1,10 @@
-	db "SUN@" ; species name
-	dw 207, 190 ; height, weight
+	db "ROSECHU@" ; species name
+	dw 405, 700 ; height, weight
 
-	db   "As the hot season"
-	next "approaches, the"
-	next "petals on this"
+	db   "The FLYING-type"
+	next "member of the"
+	next "CHAOTIC COMBO."
 
-	page "#MON's face"
-	next "become more vivid"
-	next "and lively.@"
+	page "Apparently she"
+	next "was raised by nuns"
+	next "in a church.@"

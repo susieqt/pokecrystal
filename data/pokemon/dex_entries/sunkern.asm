@@ -1,10 +1,10 @@
-	db "SEED@" ; species name
-	dw 100, 40 ; height, weight
+	db "SONICHU@" ; species name
+	dw 408, 1000 ; height, weight
 
-	db   "It is very weak."
-	next "Its only means of"
-	next "defense is to"
+	db   "The GRASS-type"
+	next "member of the"
+	next "CHAOTIC COMBO."
 
-	page "shake its leaves"
-	next "desperately at its"
-	next "attacker.@"
+	page "Was raised by a"
+	next "SCYTHER, despite"
+	next "not being BUG-type@"

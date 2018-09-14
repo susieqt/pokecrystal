@@ -1,10 +1,10 @@
-	db "STAGBEETLE@" ; species name
-	dw 411, 1210 ; height, weight
+	db "SONICHU@" ; species name
+	dw 500, 1100 ; height, weight
 
-	db   "When the tempera-"
-	next "ture drops at"
-	next "night, it sleeps"
+	db   "The FIGHTING-type"
+	next "member of the"
+	next "CHAOTIC COMBO."
 
-	page "on treetops or"
-	next "among roots where"
-	next "it is well hidden.@"
+	page "Is kind of a"
+	next "racist stereotype"
+	next "in early issues.@"

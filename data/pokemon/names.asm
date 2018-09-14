@@ -220,7 +220,7 @@ PokemonNames::
 	db "MAGCARGO@@"
 	db "WOLFMAN@@@"
 	db "WARWOLF@@@"
-	db "CORSOLA@@@"
+	db "ROSECHU@@@"
 	db "REVOLVRAID"
 	db "ARTILLERY@"
 	db "DELIBIRD@@"

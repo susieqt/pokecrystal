@@ -1,10 +1,10 @@
-	db "FLAME@" ; species name
-	dw 211, 550 ; height, weight
+	db "HEDGEHOG@" ; species name
+	dw 303, 770 ; height, weight
 
-	db   "Once it has stored"
-	next "up enough heat,"
-	next "this #MON's"
+	db   "This ORIGINAL"
+	next "CHARACTER hails"
+	next "from a land known"
 
-	page "body temperature"
-	next "can reach up to"
-	next "1700 degrees.@"
+	page "as DEVIANTART."
+	next "Copyright of"
+	next "blood skull boi84@"

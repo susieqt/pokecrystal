@@ -112,8 +112,8 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #099  #033  Nidorino		Poison  
 #100  #034  Nidoking		Poison		Ground  
 #101  #193  Turbann			Normal						*
-#102  #191  Sunkern			Grass  
-#103  #192  Sunflora		Grass  
+#102  #191  Wild			Electric	Grass			*
+#103  #192  Angelica		Electric  	Flying			*
 #104  #102  Exeggcute		Grass		Psychic  
 #105  #103  Exeggutor		Grass		Psychic  
 #106  #185  Sudowoodo		Rock  
@@ -122,7 +122,7 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #109  #049  Venomoth		Bug			Poison  
 #110  #123  Scyther			Bug			Flying  
 #111  #212  Scizor			Bug			Steel  
-#112  #127  Pinsir			Bug  
+#112  #127  Punchy			Fighting	Electric		*
 #113  #214  THANOSCAR		Steel		Normal  		*
 #114  #109  Koffing			Poison  
 #115  #110  Weezing			Poison  
@@ -181,7 +181,7 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #168  #121  Starmie			Water		Psychic  
 #169  #090  Shellder		Water  
 #170  #091  Cloyster		Water		Ice  
-#171  #222  Corsola			Water		Rock  
+#171  #222  Rosechu			Electric	Normal 			*
 #172  #223  Revolvraid		Water  						*
 #173  #224  Artillery		Water  						*
 #174  #170  Chinchou		Water		Electric  
@@ -190,12 +190,12 @@ JDEX| NDEX| NAME		   |TYPE 1 	   | TYPE 2		|Claimed?
 #177  #087  Dewgong			Water		Ice  
 #178  #108  Lickitung		Normal  
 #179  #114  Animon			Normal		Steel			*
-#180  #133  Eevee			Normal  
-#181  #134  Vaporeon		Water  
-#182  #135  Jolteon			Electric  
-#183  #136  Flareon			Fire  
-#184  #196  Espeon			Psychic  
-#185  #197  Umbreon			Dark  
+#180  #133  Sonic			Normal  					*
+#181  #134  Bubbles			Water 		Electric		* 
+#182  #135  Sonichu			Electric  					*
+#183  #136  Coldsteel		Fire  		Steel			*
+#184  #196  Magi-Chan		Psychic  	Electric		*
+#185  #197  Shadow			Dark  						*
 #186  #116  Horsea			Water  
 #187  #117  Seadra			Water  
 #188  #230  Kingdra (temp)	Dark		Dragon  		*

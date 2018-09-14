@@ -1752,15 +1752,28 @@ MagmarEvosAttacks:
 	db 0 ; no more level-up moves
 
 PinsirEvosAttacks:
+	db EVOLVE_ITEM, DAWN_STONE, CORSOLA
+	db EVOLVE_ITEM, THUNDERSTONE, JOLTEON
 	db 0 ; no more evolutions
-	db 1, VICEGRIP
-	db 7, FOCUS_ENERGY
-	db 13, BIND
-	db 19, SEISMIC_TOSS
-	db 25, HARDEN
-	db 31, GUILLOTINE
-	db 37, SUBMISSION
-	db 43, SWORDS_DANCE
+	db 1, COMET_PUNCH
+	db 6, MEDITATE
+	db 8, THUNDER_WAVE
+	db 11, ROLLING_KICK
+	db 13, PURSUIT
+	db 16, JUMP_KICK
+	db 18, SLAM
+	db 20, THUNDERBOLT
+	db 22, THUNDERPUNCH
+	db 24, ICE_PUNCH
+	db 26, FIRE_PUNCH
+	db 28, HI_JUMP_KICK
+	db 31, MACH_PUNCH
+	db 33, AGILITY
+	db 38, MEGA_PUNCH
+	db 41, THUNDER
+	db 46, MEGA_KICK
+	db 50, COUNTER
+	db 55, REVERSAL
 	db 0 ; no more level-up moves
 
 TaurosEvosAttacks:
@@ -1819,13 +1832,9 @@ DittoEvosAttacks:
 
 EeveeEvosAttacks:
 	db EVOLVE_ITEM, THUNDERSTONE, JOLTEON
-	db EVOLVE_ITEM, WATER_STONE, VAPOREON
-	db EVOLVE_ITEM, DUSK_STONE, FLAREON
-	db EVOLVE_ITEM, LEAF_STONE, SUNKERN
-	db EVOLVE_ITEM, DAWN_STONE, SUNFLORA
-	db EVOLVE_ITEM, KINGS_ROCK, PINSIR
-	db EVOLVE_HAPPINESS, TR_MORNDAY, ESPEON
-	db EVOLVE_HAPPINESS, TR_NITE, UMBREON
+	db EVOLVE_ITEM, FIRE_STONE, FLAREON
+	db EVOLVE_ITEM, DUSK_STONE, UMBREON
+	db EVOLVE_ITEM, DAWN_STONE, CORSOLA
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
@@ -1842,44 +1851,54 @@ endc
 	db 0 ; no more level-up moves
 
 VaporeonEvosAttacks:
+	db EVOLVE_ITEM, DAWN_STONE, CORSOLA
+	db EVOLVE_ITEM, THUNDERSTONE, JOLTEON
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, TAIL_WHIP
+	db 1, THUNDERSHOCK
 	db 8, SAND_ATTACK
 	db 16, WATER_GUN
 	db 23, QUICK_ATTACK
-	db 30, BITE
+	db 30, THUNDERBOLT
 	db 36, AURORA_BEAM
-	db 42, HAZE
+	db 42, EXTREMESPEED
 	db 47, ACID_ARMOR
 	db 52, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 JolteonEvosAttacks:
+	db EVOLVE_ITEM, DAWN_STONE, CORSOLA
+	db EVOLVE_ITEM, LEAF_STONE, SUNKERN
+	db EVOLVE_ITEM, MIST_STONE, ESPEON
+	db EVOLVE_ITEM, KINGS_ROCK, PINSIR
 	db 0 ; no more evolutions
 	db 1, TACKLE
+	db 1, THUNDERSHOCK
 	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
-	db 16, THUNDERSHOCK
-	db 23, QUICK_ATTACK
+	db 5, QUICK_ATTACK
+	db 10, THUNDER_WAVE
+	db 15, SAND_ATTACK
+	db 20, SLAM
+	db 23, EXTREMESPEED
+	db 26, THUNDERBOLT
 	db 30, DOUBLE_KICK
-	db 36, PIN_MISSILE
-	db 42, THUNDER_WAVE
-	db 47, AGILITY
-	db 52, THUNDER
+	db 35, PIN_MISSILE
+	db 40, THUNDER
+	db 45, TAKE_DOWN
+	db 50, AGILITY
 	db 0 ; no more level-up moves
 
 FlareonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, TAIL_WHIP
+	db 1, DOUBLE_KICK
 	db 8, SAND_ATTACK
 	db 16, EMBER
-	db 23, QUICK_ATTACK
+	db 23, BEAT_UP
 	db 30, BITE
-	db 36, FIRE_SPIN
+	db 36, IRON_HEAD
 	db 42, SMOG
-	db 47, LEER
+	db 47, CRUNCH
 	db 52, FLAMETHROWER
 	db 0 ; no more level-up moves
 
@@ -2633,25 +2652,37 @@ AipomEvosAttacks:
 	db 0 ; no more level-up moves
 
 SunkernEvosAttacks:
-	db EVOLVE_ITEM, SUN_STONE, SUNFLORA
+	db EVOLVE_ITEM, DAWN_STONE, CORSOLA
+	db EVOLVE_ITEM, THUNDERSTONE, JOLTEON
 	db 0 ; no more evolutions
-	db 1, ABSORB
-	db 4, GROWTH
-	db 10, MEGA_DRAIN
-	db 19, SUNNY_DAY
-	db 31, SYNTHESIS
-	db 46, GIGA_DRAIN
+	db 1, THUNDERSHOCK
+	db 1, SWORDS_DANCE
+	db 6, ABSORB
+	db 8, STUN_SPORE
+	db 11, MEGA_DRAIN
+	db 15, FURY_CUTTER
+	db 20, SLAM
+	db 26, THUNDERBOLT
+	db 33, PURSUIT
+	db 41, GIGA_DRAIN
+	db 50, FALSE_SWIPE
 	db 0 ; no more level-up moves
 
 SunfloraEvosAttacks:
+	db EVOLVE_ITEM, DAWN_STONE, CORSOLA
+	db EVOLVE_ITEM, THUNDERSTONE, JOLTEON
 	db 0 ; no more evolutions
-	db 1, ABSORB
-	db 1, POUND
-	db 4, GROWTH
-	db 10, RAZOR_LEAF
-	db 19, SUNNY_DAY
-	db 31, PETAL_DANCE
-	db 46, SOLARBEAM
+	db 1, THUNDERSHOCK
+	db 1, WING_ATTACK
+	db 6, METRONOME
+	db 8, THUNDER_WAVE
+	db 11, SWEET_KISS
+	db 15, ENCORE
+	db 20, SLAM
+	db 26, THUNDERBOLT
+	db 33, METRONOME
+	db 41, SKY_ATTACK
+	db 50, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 YanmaEvosAttacks:
@@ -2697,15 +2728,17 @@ QuagsireEvosAttacks:
 	db 0 ; no more level-up moves
 
 EspeonEvosAttacks:
+	db EVOLVE_ITEM, DAWN_STONE, CORSOLA
+	db EVOLVE_ITEM, THUNDERSTONE, JOLTEON
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
+	db 1, TELEPORT
+	db 8, SHADOW_BALL
 	db 16, CONFUSION
 	db 23, QUICK_ATTACK
 	db 30, SWIFT
 	db 36, PSYBEAM
-	db 42, PSYCH_UP
+	db 42, EXTREMESPEED
 	db 47, PSYCHIC_M
 	db 52, MORNING_SUN
 	db 0 ; no more level-up moves
@@ -2713,14 +2746,14 @@ EspeonEvosAttacks:
 UmbreonEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
+	db 1, BITE
+	db 8, CRUNCH
 	db 16, PURSUIT
 	db 23, QUICK_ATTACK
-	db 30, CONFUSE_RAY
+	db 30, GLARE
 	db 36, FAINT_ATTACK
 	db 42, MEAN_LOOK
-	db 47, SCREECH
+	db 47, PIN_MISSILE
 	db 52, MOONLIGHT
 	db 0 ; no more level-up moves
 
@@ -3039,15 +3072,24 @@ endc
 	db 0 ; no more level-up moves
 
 CorsolaEvosAttacks:
+	db EVOLVE_ITEM, WATER_STONE, VAPOREON
+	db EVOLVE_ITEM, DAWN_STONE, SUNFLORA
+	db EVOLVE_ITEM, THUNDERSTONE, JOLTEON
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 7, HARDEN
-	db 13, BUBBLE
-	db 19, RECOVER
-	db 25, BUBBLEBEAM
-	db 31, SPIKE_CANNON
-	db 37, MIRROR_COAT
-	db 43, ANCIENTPOWER
+	db 1, THUNDERSHOCK
+	db 1, TAIL_WHIP
+	db 5, QUICK_ATTACK
+	db 10, THUNDER_WAVE
+	db 15, AGILITY
+	db 20, SLAM
+	db 23, EXTREMESPEED
+	db 26, THUNDERBOLT
+	db 30, DOUBLE_KICK
+	db 35, BATON_PASS
+	db 40, THUNDER
+	db 45, TAKE_DOWN
+	db 50, LIGHT_SCREEN
 	db 0 ; no more level-up moves
 
 RemoraidEvosAttacks:

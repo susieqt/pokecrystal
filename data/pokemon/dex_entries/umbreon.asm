@@ -1,10 +1,10 @@
-	db "MOONLIGHT@" ; species name
-	dw 303, 600 ; height, weight
+	db "HEDGEHOG@" ; species name
+	dw 303, 770 ; height, weight
 
-	db   "On the night of a"
-	next "full moon, or when"
-	next "it gets excited,"
+	db   "This SONIC recolor"
+	next "carries a gun."
+	next "Is often confused"
 
-	page "the ring patterns"
-	next "on its body glow"
-	next "yellow.@"
+	page "with SONIC despite"
+	next "looking compl-"
+	next "etely different@"

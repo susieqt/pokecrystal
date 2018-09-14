@@ -1,10 +1,10 @@
-	db "CORAL@" ; species name
-	dw 200, 110 ; height, weight
+	db "HEDGEHOG@" ; species name
+	dw 408, 900 ; height, weight
 
-	db   "The points on its"
-	next "head absorb"
-	next "nutrients from"
+	db   "The female count-"
+	next "erpart and wife"
+	next "of SONICHU."
 
-	page "clean water. They"
-	next "cannot survive in"
-	next "polluted water.@"
+	page "It is rumored"
+	next "she has a"
+	next "large PICKLE.@"

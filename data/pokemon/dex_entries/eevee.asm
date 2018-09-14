@@ -1,10 +1,10 @@
-	db "EVOLUTION@" ; species name
-	dw 100, 140 ; height, weight
+	db "AUTISM@" ; species name
+	dw 303, 770 ; height, weight
 
-	db   "Its ability to"
-	next "evolve into many"
-	next "forms allows it to"
+	db   "The fastest"
+	next "creature on EARTH."
+	next "Also known as the"
 
-	page "adapt smoothly"
-	next "and perfectly to"
-	next "any environment.@"
+	page "BLUE BLUR. Tends"
+	next "to gorge on CHILI"
+	next "DOGS and say 'YEH'@"
