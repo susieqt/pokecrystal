@@ -211,18 +211,20 @@ MomWalksBackMovement:
 	step_end
 
 ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
+	text "Oh, <PLAYER>…! You"
+	line "finally woke"
 
-	para "ELM, was looking"
-	line "for you."
+	para "up? I was enjoying"
+	line "the alone time…"
 
-	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
+	para "Some BOOMERS built"
+	line "A town around us"
+	cont "while you slept."
+	cont "QUALUIGI moved"
+	cont "here too."
 
 	para "Oh! I almost for-"
-	line "got! Your #MON"
+	line "got! Your BOOTLEG"
 
 	para "GEAR is back from"
 	line "the repair shop."
@@ -231,18 +233,18 @@ ElmsLookingForYouText:
 	done
 
 MomGivesPokegearText:
-	text "#MON GEAR, or"
-	line "just #GEAR."
+	text "BOOTLEG GEAR, or"
+	line "just BOOTGEAR."
 
-	para "It's essential if"
-	line "you want to be a"
-	cont "good trainer."
+	para "It's basically"
+	line "a chinese knock-"
+	cont "off GameBoy."
 
 	para "Oh, the day of the"
 	line "week isn't set."
 
-	para "You mustn't forget"
-	line "that!"
+	para "You might want to"
+	line "do that!"
 	done
 
 IsItDSTText:
@@ -278,9 +280,9 @@ KnowTheInstructionsText:
 	done
 
 DontKnowTheInstructionsText:
-	text "Seriously? Have"
-	line "you never played"
-	cont "gen 2?"
+	text "Seriously? are"
+	line "you fucking"
+	cont "stupid?"
 	done
 
 InstructionsNextText:
@@ -289,16 +291,16 @@ InstructionsNextText:
 	done
 
 HurryUpElmIsWaitingText:
-	text "PROF.ELM is wait-"
+	text "QUALUIGI is wait-"
 	line "ing for you."
 
-	para "Hurry up, daddy"
-	line "uwu"
+	para "Hurry up, and"
+	line "get out."
 	done
 
 SoWhatWasProfElmsErrandText:
-	text "So, what was PROF."
-	line "ELM's errand?"
+	text "So, what was QUA-"
+	line "LUIGI's errand?"
 
 	para "…"
 
@@ -364,14 +366,15 @@ NeighborText:
 	done
 
 StoveText:
-	text "Mom's specialty!"
+	text "WITH LOVE FROM"
+	line "MOTHER"
 
-	para "LASAGNA!"
+	para "VOLCANO BAKEMEAT."
 	done
 
 SinkText:
-	text "The sink is spot-"
-	line "less. Mom likes it"
+	text "The sank is spot-"
+	line "ted. Matyr likes it"
 	cont "clean."
 	done
 
@@ -379,8 +382,9 @@ FridgeText:
 	text "Let's see what's"
 	line "in the fridge…"
 
-	para "FRESH WATER and"
-	line "tasty LEMONADE!"
+	para "Just your severed"
+	line "head collection."
+	cont "Tasty!"
 	done
 
 TVText:

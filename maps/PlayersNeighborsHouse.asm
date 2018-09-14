@@ -45,55 +45,56 @@ PlayersNeighborsHouseRadioScript:
 	end
 
 PlayersNeighborsDaughterText:
-	text "PIKACHU is an"
-	line "evolved #MON."
+	text "SONICHU is an"
+	line "evolved BOOTLEG."
 
 	para "I was amazed by"
-	line "PROF.ELM's find-"
+	line "QUALUIGI's find-"
 	cont "ings."
 
 	para "He's so famous for"
 	line "his research on"
-	cont "#MON evolution."
+	cont "shitty bootlegs!"
 
 	para "…sigh…"
 
 	para "I wish I could be"
-	line "a researcher like"
-	cont "him…"
+	line "in a serious"
+	cont "ROMhack…"
 	done
 
 PlayersNeighborText:
 	text "My daughter is"
 	line "adamant about"
 
-	para "becoming PROF."
-	line "ELM's assistant."
+	para "becoming QUA-"
+	line "LUIGI's assistant."
 
-	para "She really loves"
-	line "#MON!"
+	para "She doesn't care"
+	line "that he's a creepy"
+	cont "old pervert."
 
-	para "But then, so do I!"
+	para "But then, so am I!"
 	done
 
 PlayerNeighborRadioText1:
-	text "PROF.OAK'S #MON"
-	line "TALK! Please tune"
-	cont "in next time!"
+	text "QUARIO'S BOOTLEG"
+	line "TALK! Gimme all"
+	cont "your money!"
 	done
 
 PlayerNeighborRadioText2:
-	text "#MON CHANNEL!"
+	text "BOOTLEG CHANNEL!"
 	done
 
 PlayerNeighborRadioText3:
-	text "This is DJ MARY,"
-	line "your co-host!"
+	text "This is DJ "
+	line "SPONGE, co-host!"
 	done
 
 PlayerNeighborRadioText4:
-	text "#MON!"
-	line "#MON CHANNEL…"
+	text "BOOTLEG!"
+	line "BOOTLEG CHANNEL…"
 	done
 
 PlayersNeighborsHouse_MapEvents:
