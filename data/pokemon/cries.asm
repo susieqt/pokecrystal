@@ -101,7 +101,7 @@ PokemonCries::
 	mon_cry CRY_MUK,         $000,  $17f ; GENGAR
 	mon_cry CRY_EKANS,       $0ff,  $140 ; ONIX
 	mon_cry CRY_DROWZEE,     $088,  $0a0 ; DROWZEE
-	mon_cry CRY_DROWZEE,     $0ee,  $0c0 ; HYPNO
+	mon_cry CRY_FEAROW,      $0ee,  $100 ; HYPNO
 	mon_cry CRY_KRABBY,      $020,  $160 ; KRABBY
 	mon_cry CRY_KRABBY,      $0ee,  $160 ; KINGLER
 	mon_cry CRY_VOLTORB,     $0ed,  $100 ; VOLTORB

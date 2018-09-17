@@ -1,10 +1,10 @@
-	db "HYPNOSIS@" ; species name
+	db "DENDY@" ; species name
 	dw 503, 1670 ; height, weight
 
-	db   "The longer it"
-	next "swings its"
-	next "pendulum, the"
+	db   "Despite it's app-"
+	next "earance, it is"
+	next "actually friendly."
 
-	page "longer the effects"
-	next "of its hypnosis"
-	next "last.@"
+	page "It just wants to"
+	next "destroy the world"
+	next "with the CHAOS GOD@"

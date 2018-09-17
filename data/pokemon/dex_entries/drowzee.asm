@@ -1,10 +1,10 @@
-	db "HYPNOSIS@" ; species name
+	db "DENDY@" ; species name
 	dw 303, 710 ; height, weight
 
-	db   "When it twitches"
-	next "its nose, it can"
-	next "tell where someone"
+	db   "DENDY is the"
+	next "mascot of a"
+	next "RUSSIAN BOOTLEG"
 
-	page "is sleeping and"
-	next "what that person"
-	next "is dreaming about.@"
+	page "company. It is"
+	next "kind of a celeb-"
+	next "rity around here.@"

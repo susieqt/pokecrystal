@@ -1317,7 +1317,7 @@ DrowzeeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, HYPNOSIS
-	db 10, DISABLE
+	db 10, SCREECH
 	db 18, CONFUSION
 	db 25, HEADBUTT
 	db 31, POISON_GAS
@@ -1331,15 +1331,18 @@ HypnoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, HYPNOSIS
-	db 1, DISABLE
+	db 1, SCREECH
 	db 1, CONFUSION
 	db 10, DISABLE
-	db 18, CONFUSION
+	db 18, NIGHT_SHADE
 	db 25, HEADBUTT
-	db 33, POISON_GAS
-	db 40, MEDITATE
-	db 49, PSYCHIC_M
-	db 55, PSYCH_UP
+	db 27, MEAN_LOOK
+	db 30, DESTINY_BOND
+	db 35, SCARY_FACE
+	db 40, PUKE_BLOOD
+	db 45, DREAM_EATER
+	db 50, PSYCHIC_M
+	db 55, BEAT_UP
 	db 60, FUTURE_SIGHT
 	db 0 ; no more level-up moves
 

@@ -1195,7 +1195,7 @@ JohtoGrassWildMons:
 	; morn
 	db 2, EEVEE
 	db 2, STANTLER
-	db 3, EEVEE
+	db 3, AERODACTYL
 	db 3, YANMA
 	db 2, RATTATA
 	db 3, RATICATE
@@ -1209,7 +1209,7 @@ JohtoGrassWildMons:
 	db 3, SMOOCHUM
 	db 3, EEVEE
 	; nite
-	db 2, EEVEE
+	db 2, DROWZEE
 	db 2, STANTLER
 	db 3, FARFETCH_D
 	db 3, SKARMORY
