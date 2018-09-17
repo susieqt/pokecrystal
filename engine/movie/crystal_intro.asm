@@ -1203,17 +1203,17 @@ IntroScene17:
 
 IntroScene18:
 ; Suicune close up.
-	ld hl, wIntroSceneFrameCounter
-	ld a, [hl]
-	inc [hl]
-	cp $60
-	jr nc, .done
-	ldh a, [hSCX]
-	cp $60
-	ret z
-	add 8
-	ldh [hSCX], a
-	ret
+;	ld hl, wIntroSceneFrameCounter
+;	ld a, [hl]
+;	inc [hl]
+;	cp $60
+;	jr nc, .done
+;	ldh a, [hSCX]
+;	cp $60
+;	ret z
+;	add 8
+;	ldh [hSCX], a
+;	ret
 .done
 	call NextIntroScene
 	ret

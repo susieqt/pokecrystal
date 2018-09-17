@@ -143,6 +143,7 @@ INCLUDE "audio/music/postcredits.asm"
 SECTION "Custom Songs 1", ROMX
 
 INCLUDE "audio/music/rivalbattle.asm"
+INCLUDE "audio/music/shop.asm"
 
 
 SECTION "Sound Effects", ROMX
