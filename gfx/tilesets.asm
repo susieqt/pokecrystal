@@ -294,21 +294,18 @@ INCBIN "data/tilesets/battle_tower_outside_metatiles.bin"
 TilesetBattleTowerOutsideColl:
 INCLUDE "data/tilesets/battle_tower_outside_collision.asm"
 
-TilesetBetaWordRoomMeta:
-INCBIN "data/tilesets/beta_word_room_metatiles.bin"
-
-TilesetBetaWordRoomColl:
-TilesetHoOhWordRoomColl:
 TilesetKabutoWordRoomColl:
 TilesetOmanyteWordRoomColl:
+TilesetHoOhWordRoomColl:
+INCLUDE "data/tilesets/ho_oh_word_room_collision.asm"
+
 TilesetAerodactylWordRoomColl:
-INCLUDE "data/tilesets/beta_word_room_collision.asm"
+INCLUDE "data/tilesets/aerodactyl_word_room_collision.asm"
 
 
 SECTION "Tileset Data 7", ROMX
 
 TilesetRuinsOfAlphGFX:
-TilesetBetaWordRoomGFX:
 TilesetHoOhWordRoomGFX:
 TilesetKabutoWordRoomGFX:
 TilesetOmanyteWordRoomGFX:
@@ -335,3 +332,12 @@ INCBIN "data/tilesets/omanyte_word_room_metatiles.bin"
 
 TilesetAerodactylWordRoomMeta:
 INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
+
+TilesetBetaWordRoomMeta:
+INCBIN "data/tilesets/beta_word_room_metatiles.bin"
+
+TilesetBetaWordRoomColl:
+INCLUDE "data/tilesets/beta_word_room_collision.asm"
+
+TilesetBetaWordRoomGFX:
+INCBIN "gfx/tilesets/beta_word_room.2bpp.lz"

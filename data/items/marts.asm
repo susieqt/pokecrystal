@@ -37,20 +37,31 @@ Marts:
 .End
 
 MartCherrygrove:
-	db 4 ; # items
+	db 10 ; # items
 	db POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
+	db THUNDERSTONE
+	db DAWN_STONE
+	db LEAF_STONE
+	db DUSK_STONE
+	db WATER_STONE
+	db FIRE_STONE
+	db KINGS_ROCK
+	db METAL_COAT
+	db MIST_STONE
 	db -1 ; end
 
 MartCherrygroveDex:
-	db 5 ; # items
+	db 10 ; # items
 	db POKE_BALL
 	db POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
+	db THUNDERSTONE
+	db DAWN_STONE
+	db LEAF_STONE
+	db DUSK_STONE
+	db WATER_STONE
+	db FIRE_STONE
+	db KINGS_ROCK
+	db METAL_COAT
 	db -1 ; end
 
 MartViolet:
@@ -61,10 +72,10 @@ MartViolet:
 	db ANTIDOTE
 	db PARLYZ_HEAL
 	db AWAKENING
-	db X_DEFEND
-	db X_ATTACK
-	db X_SPEED
-	db FLOWER_MAIL
+	db MIST_STONE
+	db DAWN_STONE
+	db THUNDERSTONE
+	db METAL_COAT
 	db -1 ; end
 
 MartAzalea:
