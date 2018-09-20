@@ -107,3 +107,4 @@ Music:
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
 	dba Music_Shop
+	dba Music_Intermission

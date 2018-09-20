@@ -953,7 +953,7 @@ MapObjectMovementPattern:
 	ld hl, OBJECT_ACTION
 	add hl, bc
 	ld [hl], OBJECT_ACTION_GRASS_SHAKE
-+._MovementGrass_Puddle_End:
+._MovementGrass_Puddle_End:
 	ld hl, OBJECT_STEP_DURATION
 	add hl, de
 	ld a, [hl]
