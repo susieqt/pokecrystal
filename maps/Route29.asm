@@ -145,7 +145,7 @@ Route29SilverSceneNorth:
 	special FadeOutMusic
 	pause 15
 	appear ROUTE29_SILVER
-	applymovement ROUTE29_SILVER, Route29_RivalWalksToYou
+	applymovement ROUTE29_SILVER, CherrygroveCity_RivalWalksToYou
 	turnobject PLAYER, LEFT
 	playmusic MUSIC_RIVAL_ENCOUNTER
 	opentext
@@ -204,9 +204,9 @@ Route29SilverSceneNorth:
 	closetext
 .FinishRival:
 	playsound SFX_TACKLE
-	applymovement PLAYER, Route29_RivalPushesYouOutOfTheWay
+	applymovement PLAYER, CherrygroveCity_RivalPushesYouOutOfTheWay
 	turnobject PLAYER, LEFT
-	applymovement ROUTE29_SILVER, Route29_RivalExitsStageLeft
+	applymovement ROUTE29_SILVER, CherrygroveCity_RivalExitsStageLeft
 	disappear ROUTE29_SILVER
 	setscene SCENE_ROUTE29_NOTHING
 	special HealParty

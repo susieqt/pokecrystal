@@ -7,7 +7,7 @@
 	const ROUTE27_POKE_BALL1
 	const ROUTE27_POKE_BALL2
 
-ROUTE27_MapScripts:
+Route27_MapScripts:
 	db 0 ; scene scripts
 
 	db 1 ; callbacks
@@ -415,7 +415,7 @@ DarkCaveSignText:
 	text "DEMO END"
 	done
 
-ROUTE27_MapEvents:
+Route27_MapEvents:
 	db 0, 0 ; filler
 
 	db 3 ; warp events
