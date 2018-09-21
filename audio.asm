@@ -145,6 +145,7 @@ SECTION "Custom Songs 1", ROMX
 INCLUDE "audio/music/rivalbattle.asm"
 INCLUDE "audio/music/shop.asm"
 INCLUDE "audio/music/intermission.asm"
+INCLUDE "audio/music/cinnabarmansion.asm"
 
 
 SECTION "Sound Effects", ROMX

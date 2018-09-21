@@ -109,6 +109,7 @@
 	const MUSIC_MOBILE_CENTER                ; 66
 	const MUSIC_SHOP                         ; 67
 	const MUSIC_INTERMISSION                 ; 68
+	const MUSIC_CINNABARMANSION              ; 69
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $64

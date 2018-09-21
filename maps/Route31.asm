@@ -1,439 +1,492 @@
 	const_def 2 ; object constants
-	const ROUTE31_FISHER
-	const ROUTE31_YOUNGSTER
-	const ROUTE31_BUG_CATCHER
-	const ROUTE31_COOLTRAINER_M
-	const ROUTE31_FRUIT_TREE
+	const ROUTE31_COOLTRAINER_M1
+	const ROUTE31_COOLTRAINER_M2
+	const ROUTE31_COOLTRAINER_F1
+	const ROUTE31_COOLTRAINER_F2
+	const ROUTE31_YOUNGSTER1
+	const ROUTE31_YOUNGSTER2
 	const ROUTE31_POKE_BALL1
 	const ROUTE31_POKE_BALL2
+	const ROUTE31_FISHER
 
 Route31_MapScripts:
-	db 0 ; scene scripts
+	db 2 ; scene scripts
+	scene_script .DummyScene0 ; SCENE_DEFAULT
+	scene_script .DummyScene1 ; SCENE_FINISHED
 
-	db 1 ; callbacks
-	callback MAPCALLBACK_NEWMAP, .CheckMomCall
+	db 0 ; callbacks
 
-.CheckMomCall:
-	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
-	iffalse .DoMomCall
-	return
+.DummyScene0:
+	end
 
-.DoMomCall:
-	specialphonecall SPECIALCALL_WORRIED
-	return
+.DummyScene1:
+	end
 
-TrainerBugCatcherWade1:
-	trainer BUG_CATCHER, WADE1, EVENT_BEAT_BUG_CATCHER_WADE, BugCatcherWade1SeenText, BugCatcherWade1BeatenText, 0, .Script
+FirstStepIntoKantoLeftScene:
+	turnobject ROUTE31_FISHER, LEFT
+	showemote EMOTE_SHOCK, ROUTE31_FISHER, 15
+	applymovement ROUTE31_FISHER, MovementData_0x1a0a66
+	jump FirstStepIntoKantoScene_Continue
+
+FirstStepIntoKantoRightScene:
+	turnobject ROUTE31_FISHER, LEFT
+	showemote EMOTE_SHOCK, ROUTE31_FISHER, 15
+	applymovement ROUTE31_FISHER, MovementData_0x1a0a69
+FirstStepIntoKantoScene_Continue:
+	turnobject PLAYER, RIGHT
+	opentext
+	writetext Route31FisherHeyText
+	buttonsound
+	writetext Route31FisherText
+	waitbutton
+	closetext
+	setscene SCENE_FINISHED
+	end
+
+Route31FisherScript:
+	jumptextfaceplayer Route31FisherText
+
+TrainerPsychicGilbert:
+	trainer PSYCHIC_T, GILBERT, EVENT_BEAT_PSYCHIC_GILBERT, PsychicGilbertSeenText, PsychicGilbertBeatenText, 0, .Script
 
 .Script:
-	writecode VAR_CALLERID, PHONE_BUG_CATCHER_WADE
 	endifjustbattled
 	opentext
-	checkflag ENGINE_WADE
-	iftrue .WadeRematch
-	checkflag ENGINE_WADE_HAS_ITEM
-	iftrue .WadeItem
-	checkcellnum PHONE_BUG_CATCHER_WADE
-	iftrue .AcceptedNumberSTD
-	checkevent EVENT_WADE_ASKED_FOR_PHONE_NUMBER
-	iftrue .AskAgain
-	writetext BugCatcherWade1AfterText
+	writetext PsychicGilbertAfterBattleText
 	waitbutton
-	setevent EVENT_WADE_ASKED_FOR_PHONE_NUMBER
-	scall .AskPhoneNumberSTD
-	jump .Continue
+	closetext
+	end
 
-.AskAgain:
-	scall .AskAgainSTD
-.Continue:
-	askforphonenumber PHONE_BUG_CATCHER_WADE
-	ifequal PHONE_CONTACTS_FULL, .PhoneFullSTD
-	ifequal PHONE_CONTACT_REFUSED, .DeclinedNumberSTD
-	trainertotext BUG_CATCHER, WADE1, MEM_BUFFER_0
-	scall .RegisterNumberSTD
-	jump .AcceptedNumberSTD
+TrainerBirdKeeperJose2:
+	trainer BIRD_KEEPER, JOSE2, EVENT_BEAT_BIRD_KEEPER_JOSE2, BirdKeeperJose2SeenText, BirdKeeperJose2BeatenText, 0, .Script
 
-.WadeRematch:
-	scall .RematchSTD
-	winlosstext BugCatcherWade1BeatenText, 0
-	copybytetovar wWadeFightCount
-	ifequal 4, .Fight4
-	ifequal 3, .Fight3
+.Script:
+	writecode VAR_CALLERID, PHONE_BIRDKEEPER_JOSE
+	endifjustbattled
+	opentext
+	checkflag ENGINE_JOSE
+	iftrue .WantsBattle
+	checkflag ENGINE_JOSE_HAS_STAR_PIECE
+	iftrue .HasStarPiece
+	checkcellnum PHONE_BIRDKEEPER_JOSE
+	iftrue .NumberAccepted
+	checkevent EVENT_JOSE_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskedAlready
+	writetext BirdKeeperJose2AfterBattleText
+	buttonsound
+	setevent EVENT_JOSE_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .AskForNumber
+
+.AskedAlready:
+	scall .AskNumber2
+.AskForNumber:
+	askforphonenumber PHONE_BIRDKEEPER_JOSE
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	trainertotext BIRD_KEEPER, JOSE2, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+
+.WantsBattle:
+	scall .Rematch
+	winlosstext BirdKeeperJose2BeatenText, 0
+	copybytetovar wJoseFightCount
 	ifequal 2, .Fight2
 	ifequal 1, .Fight1
 	ifequal 0, .LoadFight0
-.Fight4:
-	checkevent EVENT_BEAT_ELITE_FOUR
-	iftrue .LoadFight4
-.Fight3:
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .LoadFight3
 .Fight2:
-	checkflag ENGINE_FLYPOINT_MAHOGANY
+	checkevent EVENT_RESTORED_POWER_TO_KANTO
 	iftrue .LoadFight2
 .Fight1:
-	checkflag ENGINE_FLYPOINT_GOLDENROD
+	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight1
 .LoadFight0:
-	loadtrainer BUG_CATCHER, WADE1
+	loadtrainer BIRD_KEEPER, JOSE2
 	startbattle
 	reloadmapafterbattle
-	loadvar wWadeFightCount, 1
-	clearflag ENGINE_WADE
+	loadvar wJoseFightCount, 1
+	clearflag ENGINE_JOSE
 	end
 
 .LoadFight1:
-	loadtrainer BUG_CATCHER, WADE2
+	loadtrainer BIRD_KEEPER, JOSE1
 	startbattle
 	reloadmapafterbattle
-	loadvar wWadeFightCount, 2
-	clearflag ENGINE_WADE
+	loadvar wJoseFightCount, 2
+	clearflag ENGINE_JOSE
 	end
 
 .LoadFight2:
-	loadtrainer BUG_CATCHER, WADE3
+	loadtrainer BIRD_KEEPER, JOSE3
 	startbattle
 	reloadmapafterbattle
-	loadvar wWadeFightCount, 3
-	clearflag ENGINE_WADE
+	clearflag ENGINE_JOSE
 	end
 
-.LoadFight3:
-	loadtrainer BUG_CATCHER, WADE4
-	startbattle
-	reloadmapafterbattle
-	loadvar wWadeFightCount, 4
-	clearflag ENGINE_WADE
-	end
+.HasStarPiece:
+	scall .Gift
+	verbosegiveitem STAR_PIECE
+	iffalse .NoRoom
+	clearflag ENGINE_JOSE_HAS_STAR_PIECE
+	jump .NumberAccepted
 
-.LoadFight4:
-	loadtrainer BUG_CATCHER, WADE5
-	startbattle
-	reloadmapafterbattle
-	clearflag ENGINE_WADE
-	end
+.NoRoom:
+	jump .PackFull
 
-.WadeItem:
-	scall .ItemSTD
-	checkevent EVENT_WADE_HAS_BERRY
-	iftrue .Berry
-	checkevent EVENT_WADE_HAS_PSNCUREBERRY
-	iftrue .Psncureberry
-	checkevent EVENT_WADE_HAS_PRZCUREBERRY
-	iftrue .Przcureberry
-	checkevent EVENT_WADE_HAS_BITTER_BERRY
-	iftrue .BitterBerry
-.Berry:
-	verbosegiveitem BERRY
-	iffalse .PackFull
-	jump .Done
-.Psncureberry:
-	verbosegiveitem PSNCUREBERRY
-	iffalse .PackFull
-	jump .Done
-.Przcureberry:
-	verbosegiveitem PRZCUREBERRY
-	iffalse .PackFull
-	jump .Done
-.BitterBerry:
-	verbosegiveitem BITTER_BERRY
-	iffalse .PackFull
-.Done:
-	clearflag ENGINE_WADE_HAS_ITEM
-	jump .AcceptedNumberSTD
-.PackFull:
-	jump .PackFullSTD
-
-.AskPhoneNumberSTD:
+.AskNumber1:
 	jumpstd asknumber1m
 	end
 
-.AskAgainSTD:
+.AskNumber2:
 	jumpstd asknumber2m
 	end
 
-.RegisterNumberSTD:
+.RegisteredNumber:
 	jumpstd registerednumberm
 	end
 
-.AcceptedNumberSTD:
+.NumberAccepted:
 	jumpstd numberacceptedm
 	end
 
-.DeclinedNumberSTD:
+.NumberDeclined:
 	jumpstd numberdeclinedm
 	end
 
-.PhoneFullSTD:
+.PhoneFull:
 	jumpstd phonefullm
 	end
 
-.RematchSTD:
+.Rematch:
 	jumpstd rematchm
 	end
 
-.ItemSTD:
+.Gift:
 	jumpstd giftm
 	end
 
-.PackFullSTD:
+.PackFull:
 	jumpstd packfullm
 	end
 
-Route31MailRecipientScript:
-	faceplayer
+TrainerCooltrainermBlake:
+	trainer COOLTRAINERM, BLAKE, EVENT_BEAT_COOLTRAINERM_BLAKE, CooltrainermBlakeSeenText, CooltrainermBlakeBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
 	opentext
-	checkevent EVENT_GOT_TM50_NIGHTMARE
-	iftrue .DescribeNightmare
-	checkevent EVENT_GOT_KENYA
-	iftrue .TryGiveKenya
-	writetext Text_Route31SleepyMan
+	writetext CooltrainermBlakeAfterBattleText
 	waitbutton
 	closetext
 	end
 
-.TryGiveKenya:
-	writetext Text_Route31SleepyManGotMail
+TrainerCooltrainermBrian:
+	trainer COOLTRAINERM, BRIAN, EVENT_BEAT_COOLTRAINERM_BRIAN, CooltrainermBrianSeenText, CooltrainermBrianBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CooltrainermBrianAfterBattleText
+	waitbutton
+	closetext
+	end
+
+TrainerCooltrainerfReena:
+	trainer COOLTRAINERF, REENA1, EVENT_BEAT_COOLTRAINERF_REENA, CooltrainerfReenaSeenText, CooltrainerfReenaBeatenText, 0, .Script
+
+.Script:
+	writecode VAR_CALLERID, PHONE_COOLTRAINERF_REENA
+	endifjustbattled
+	opentext
+	checkflag ENGINE_REENA
+	iftrue .WantsBattle
+	checkcellnum PHONE_COOLTRAINERF_REENA
+	iftrue .NumberAccepted
+	checkevent EVENT_REENA_ASKED_FOR_PHONE_NUMBER
+	iftrue .AskedAlready
+	writetext CooltrainerfReenaAfterBattleText
 	buttonsound
-	checkpokemail ReceivedSpearowMailText
-	ifequal POKEMAIL_WRONG_MAIL, .WrongMail
-	ifequal POKEMAIL_REFUSED, .Refused
-	ifequal POKEMAIL_NO_MAIL, .NoMail
-	ifequal POKEMAIL_LAST_MON, .LastMon
-	; POKEMAIL_CORRECT
-	writetext Text_Route31HandOverMailMon
-	buttonsound
-	writetext Text_Route31ReadingMail
-	buttonsound
-	setevent EVENT_GAVE_KENYA
-	verbosegiveitem TM_NIGHTMARE
-	iffalse .NoRoomForItems
-	setevent EVENT_GOT_TM50_NIGHTMARE
-.DescribeNightmare:
-	writetext Text_Route31DescribeNightmare
+	setevent EVENT_REENA_ASKED_FOR_PHONE_NUMBER
+	scall .AskNumber1
+	jump .AskForNumber
+
+.AskedAlready:
+	scall .AskNumber2
+.AskForNumber:
+	askforphonenumber PHONE_COOLTRAINERF_REENA
+	ifequal PHONE_CONTACTS_FULL, .PhoneFull
+	ifequal PHONE_CONTACT_REFUSED, .NumberDeclined
+	trainertotext COOLTRAINERF, REENA1, MEM_BUFFER_0
+	scall .RegisteredNumber
+	jump .NumberAccepted
+
+.WantsBattle:
+	scall .Rematch
+	winlosstext CooltrainerfReenaBeatenText, 0
+	copybytetovar wReenaFightCount
+	ifequal 2, .Fight2
+	ifequal 1, .Fight1
+	ifequal 0, .LoadFight0
+.Fight2:
+	checkevent EVENT_RESTORED_POWER_TO_KANTO
+	iftrue .LoadFight2
+.Fight1:
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iftrue .LoadFight1
+.LoadFight0:
+	loadtrainer COOLTRAINERF, REENA1
+	startbattle
+	reloadmapafterbattle
+	loadvar wReenaFightCount, 1
+	clearflag ENGINE_REENA
+	end
+
+.LoadFight1:
+	loadtrainer COOLTRAINERF, REENA2
+	startbattle
+	reloadmapafterbattle
+	loadvar wReenaFightCount, 2
+	clearflag ENGINE_REENA
+	end
+
+.LoadFight2:
+	loadtrainer COOLTRAINERF, REENA3
+	startbattle
+	reloadmapafterbattle
+	clearflag ENGINE_REENA
+	end
+
+.AskNumber1:
+	jumpstd asknumber1f
+	end
+
+.AskNumber2:
+	jumpstd asknumber2f
+	end
+
+.RegisteredNumber:
+	jumpstd registerednumberf
+	end
+
+.NumberAccepted:
+	jumpstd numberacceptedf
+	end
+
+.NumberDeclined:
+	jumpstd numberdeclinedf
+	end
+
+.PhoneFull:
+	jumpstd phonefullf
+	end
+
+.Rematch:
+	jumpstd rematchf
+	end
+
+TrainerCooltrainerfMegan:
+	trainer COOLTRAINERF, MEGAN, EVENT_BEAT_COOLTRAINERF_MEGAN, CooltrainerfMeganSeenText, CooltrainerfMeganBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext CooltrainerfMeganAfterBattleText
 	waitbutton
-.NoRoomForItems:
 	closetext
 	end
 
-.WrongMail:
-	writetext Text_Route31WrongMail
-	waitbutton
-	closetext
-	end
+TohjoFallsSign:
+	jumptext TohjoFallsSignText
 
-.NoMail:
-	writetext Text_Route31MissingMail
-	waitbutton
-	closetext
-	end
+Route31TMSolarbeam:
+	itemball TM_SOLARBEAM
 
-.Refused:
-	writetext Text_Route31DeclinedToHandOverMail
-	waitbutton
-	closetext
-	end
+Route31RareCandy:
+	itemball RARE_CANDY
 
-.LastMon:
-	writetext Text_Route31CantTakeLastMon
-	waitbutton
-	closetext
-	end
+MovementData_0x1a0a66:
+	step LEFT
+	step LEFT
+	step_end
 
-ReceivedSpearowMailText:
-	db   "DARK CAVE leads"
-	next "to another road@"
+MovementData_0x1a0a69:
+	step LEFT
+	step_end
 
-Route31YoungsterScript:
-	jumptextfaceplayer Route31YoungsterText
-
-Route31Sign:
-	jumptext Route31SignText
-
-DarkCaveSign:
-	jumptext DarkCaveSignText
-
-Route31CooltrainerMScript:
-	jumptextfaceplayer Route31CooltrainerMText
-
-Route31FruitTree:
-	fruittree FRUITTREE_ROUTE_31
-
-Route31Potion:
-	itemball POTION
-
-Route31PokeBall:
-	itemball POKE_BALL
-
-Route31CooltrainerMText:
-	text "DARK CAVE…"
-
-	para "If #MON could"
-	line "light it up, I'd"
-	cont "explore it."
+Route31FisherHeyText:
+	text "Hey!"
 	done
 
-BugCatcherWade1SeenText:
-	text "I caught a bunch"
-	line "of #MON. Let me"
-	cont "battle with you!"
+Route31FisherText:
+	text "Do you know what"
+	line "you just did?"
+
+	para "You've taken your"
+	line "first step into"
+	cont "KANTO."
+
+	para "Check your #-"
+	line "GEAR MAP and see."
 	done
 
-BugCatcherWade1BeatenText:
-	text "Awwwww…"
+CooltrainermBlakeSeenText:
+	text "You look pretty"
+	line "strong."
+	cont "Let me battle you!"
 	done
 
-BugCatcherWade1AfterText:
-	text "You can catch"
-	line "#MON even if"
-
-	para "you have six with"
-	line "you."
-
-	para "If you catch one,"
-	line "it'll go to your"
-	cont "BOX automatically."
+CooltrainermBlakeBeatenText:
+	text "Yow!"
 	done
 
-Text_Route31SleepyMan:
-	text "… Hnuurg… Huh?"
+CooltrainermBlakeAfterBattleText:
+	text "If you prevail on"
+	line "this harsh trek,"
 
-	para "I walked too far"
-	line "today looking for"
-	cont "#MON."
+	para "the truth will be"
+	line "revealed!"
 
-	para "My feet hurt and"
-	line "I'm sleepy…"
-
-	para "If I were a wild"
-	line "#MON, I'd be"
-	cont "easy to catch…"
-
-	para "…Zzzz…"
+	para "Heh, sorry, I just"
+	line "wanted to say"
+	cont "something cool."
 	done
 
-Text_Route31SleepyManGotMail:
-	text "…Zzzz… Huh?"
-
-	para "What's that? You"
-	line "have MAIL for me?"
+CooltrainermBrianSeenText:
+	text "Hm? You're good,"
+	line "aren't you?"
 	done
 
-Text_Route31HandOverMailMon:
-	text "<PLAYER> handed"
-	line "over the #MON"
-	cont "holding the MAIL."
+CooltrainermBrianBeatenText:
+	text "Just as I thought!"
 	done
 
-Text_Route31ReadingMail:
-	text "Let's see…"
-
-	para "…DARK CAVE leads"
-	line "to another road…"
-
-	para "That's good to"
-	line "know."
-
-	para "Thanks for bring-"
-	line "ing this to me."
-
-	para "My friend's a good"
-	line "guy, and you're"
-	cont "swell too!"
-
-	para "I'd like to do"
-	line "something good in"
-	cont "return too!"
-
-	para "I know! I want you"
-	line "to have this!"
+CooltrainermBrianAfterBattleText:
+	text "A good trainer can"
+	line "recognize other"
+	cont "good trainers."
 	done
 
-Text_Route31DescribeNightmare:
-	text "TM50 is NIGHTMARE."
+CooltrainerfReenaSeenText:
+	text "You shouldn't"
+	line "underestimate the"
 
-	para "It's a wicked move"
-	line "that steadily cuts"
-
-	para "the HP of a sleep-"
-	line "ing enemy."
-
-	para "Ooooh…"
-	line "That's scary…"
-
-	para "I don't want to"
-	line "have bad dreams."
+	para "wild #MON in"
+	line "these parts."
 	done
 
-Text_Route31WrongMail:
-	text "This MAIL isn't"
-	line "for me."
+CooltrainerfReenaBeatenText:
+	text "Oh! You're much"
+	line "too strong!"
 	done
 
-Text_Route31MissingMail:
-	text "Why is this #-"
-	line "MON so special?"
+CooltrainerfReenaAfterBattleText:
+	text "You're just a kid,"
+	line "but you're not to"
 
-	para "It doesn't have"
-	line "any MAIL."
+	para "be underestimated"
+	line "either."
 	done
 
-Text_Route31DeclinedToHandOverMail:
-	text "What? You don't"
-	line "want anything?"
+CooltrainerfMeganSeenText:
+	text "It's rare to see"
+	line "anyone come here."
+
+	para "Are you training"
+	line "on your own?"
 	done
 
-Text_Route31CantTakeLastMon:
-	text "If I take that"
-	line "#MON from you,"
-
-	para "what are you going"
-	line "to use in battle?"
+CooltrainerfMeganBeatenText:
+	text "Oh! You're really"
+	line "strong!"
 	done
 
-Route31YoungsterText:
-	text "I found a good"
-	line "#MON in DARK"
-	cont "CAVE."
+CooltrainerfMeganAfterBattleText:
+	text "I'm checking out"
+	line "pre- and post-"
+	cont "evolution #MON."
 
-	para "I'm going to raise"
-	line "it to take on"
-	cont "FALKNER."
+	para "Evolution really"
+	line "does make #MON"
+	cont "stronger."
 
-	para "He's the leader of"
-	line "VIOLET CITY's GYM."
+	para "But evolved forms"
+	line "also learn moves"
+	cont "later on."
 	done
 
-Route31SignText:
-	text "ROUTE 31"
+PsychicGilbertSeenText:
+	text "Don't say a thing!"
 
-	para "VIOLET CITY -"
-	line "CHERRYGROVE CITY"
+	para "Let me guess what"
+	line "you're thinking."
+
+	para "Mmmmmmm…"
+
+	para "I got it! You're"
+	line "on the #MON"
+	cont "LEAGUE challenge!"
 	done
 
-DarkCaveSignText:
-	text "DARK CAVE"
+PsychicGilbertBeatenText:
+	text "You're too much!"
+	done
+
+PsychicGilbertAfterBattleText:
+	text "With your skills,"
+	line "you'll do well at"
+	cont "the LEAGUE."
+
+	para "That's what my"
+	line "premonition says."
+	done
+
+BirdKeeperJose2SeenText:
+	text "Tweet! Tweet!"
+	line "Tetweet!"
+	done
+
+BirdKeeperJose2BeatenText:
+	text "Tweet!"
+	done
+
+BirdKeeperJose2AfterBattleText:
+	text "BIRD KEEPERS like"
+	line "me mimic bird"
+
+	para "whistles to com-"
+	line "mand #MON."
+	done
+
+TohjoFallsSignText:
+	text "TOHJO FALLS"
+
+	para "THE LINK BETWEEN"
+	line "KANTO AND JOHTO"
 	done
 
 Route31_MapEvents:
 	db 0, 0 ; filler
 
 	db 3 ; warp events
-	warp_event  4,  6, ROUTE_31_VIOLET_GATE, 3
-	warp_event  4,  7, ROUTE_31_VIOLET_GATE, 4
-	warp_event 34,  5, DARK_CAVE_VIOLET_ENTRANCE, 1
+	warp_event 33,  7, ROUTE_27_SANDSTORM_HOUSE, 1
+	warp_event 26,  5, TOHJO_FALLS, 1
+	warp_event 36,  5, TOHJO_FALLS, 2
 
-	db 0 ; coord events
+	db 2 ; coord events
+	coord_event 18, 10, SCENE_DEFAULT, FirstStepIntoKantoLeftScene
+	coord_event 19, 10, SCENE_DEFAULT, FirstStepIntoKantoRightScene
 
-	db 2 ; bg events
-	bg_event  7,  5, BGEVENT_READ, Route31Sign
-	bg_event 31,  5, BGEVENT_READ, DarkCaveSign
+	db 1 ; bg events
+	bg_event 25,  7, BGEVENT_READ, TohjoFallsSign
 
-	db 7 ; object events
-	object_event 17,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31MailRecipientScript, -1
-	object_event  9,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31YoungsterScript, -1
-	object_event 21, 13, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 5, TrainerBugCatcherWade1, -1
-	object_event 33,  8, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31CooltrainerMScript, -1
-	object_event 16,  7, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31FruitTree, -1
-	object_event 29,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route31Potion, EVENT_ROUTE_31_POTION
-	object_event 19, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route31PokeBall, EVENT_ROUTE_31_POKE_BALL
+	db 9 ; object events
+	object_event 48,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerCooltrainermBlake, -1
+	object_event 58,  6, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerCooltrainermBrian, -1
+	object_event 72, 10, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 4, TrainerCooltrainerfReena, -1
+	object_event 37,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerfMegan, -1
+	object_event 65,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicGilbert, -1
+	object_event 58, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperJose2, -1
+	object_event 60, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route31TMSolarbeam, EVENT_ROUTE_27_TM_SOLARBEAM
+	object_event 53, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route31RareCandy, EVENT_ROUTE_27_RARE_CANDY
+	object_event 21, 10, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 3, Route31FisherScript, -1

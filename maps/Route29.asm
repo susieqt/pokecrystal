@@ -7,6 +7,7 @@
 	const ROUTE29_COOLTRAINER_M2
 	const ROUTE29_TUSCANY
 	const ROUTE29_POKE_BALL
+	const ROUTE29_SILVER
 
 Route29_MapScripts:
 	db 2 ; scene scripts
@@ -136,6 +137,82 @@ CatchingTutorialDudeScript:
 	closetext
 	end
 
+Route29SilverSceneSouth:
+	moveobject ROUTE29_SILVER, 0, 9
+Route29SilverSceneNorth:
+	turnobject PLAYER, LEFT
+	showemote EMOTE_SHOCK, PLAYER, 15
+	special FadeOutMusic
+	pause 15
+	appear ROUTE29_SILVER
+	applymovement ROUTE29_SILVER, Route29_RivalWalksToYou
+	turnobject PLAYER, LEFT
+	playmusic MUSIC_RIVAL_ENCOUNTER
+	opentext
+	writetext Route29RivalText_Seen
+	waitbutton
+	closetext
+	checkevent EVENT_GOT_TOTODILE_FROM_ELM
+	iftrue .Totodile
+	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
+	iftrue .Chikorita
+	winlosstext SilverRoute29WinText, SilverRoute29LossText
+	setlasttalked ROUTE29_SILVER
+	loadtrainer RIVAL1, RIVAL1_1_TOTODILE
+	writecode VAR_BATTLETYPE, BATTLETYPE_CANLOSE
+	startbattle
+	dontrestartmapmusic
+	reloadmap
+	iftrue .AfterVictorious
+	jump .AfterYourDefeat
+
+.Totodile:
+	winlosstext SilverRoute29WinText, SilverRoute29LossText
+	setlasttalked ROUTE29_SILVER
+	loadtrainer RIVAL1, RIVAL1_1_CHIKORITA
+	writecode VAR_BATTLETYPE, BATTLETYPE_CANLOSE
+	startbattle
+	dontrestartmapmusic
+	reloadmap
+	iftrue .AfterVictorious
+	jump .AfterYourDefeat
+
+.Chikorita:
+	winlosstext SilverRoute29WinText, SilverRoute29LossText
+	setlasttalked ROUTE29_SILVER
+	loadtrainer RIVAL1, RIVAL1_1_CYNDAQUIL
+	writecode VAR_BATTLETYPE, BATTLETYPE_CANLOSE
+	startbattle
+	dontrestartmapmusic
+	reloadmap
+	iftrue .AfterVictorious
+	jump .AfterYourDefeat
+
+.AfterVictorious:
+	playmusic MUSIC_RIVAL_AFTER
+	opentext
+	writetext Route29RivalText_YouWon
+	waitbutton
+	closetext
+	jump .FinishRival
+
+.AfterYourDefeat:
+	playmusic MUSIC_RIVAL_AFTER
+	opentext
+	writetext Route29RivalText_YouLost
+	waitbutton
+	closetext
+.FinishRival:
+	playsound SFX_TACKLE
+	applymovement PLAYER, Route29_RivalPushesYouOutOfTheWay
+	turnobject PLAYER, LEFT
+	applymovement ROUTE29_SILVER, Route29_RivalExitsStageLeft
+	disappear ROUTE29_SILVER
+	setscene SCENE_ROUTE29_NOTHING
+	special HealParty
+	playmapmusic
+	end
+
 Route29YoungsterScript:
 	jumptextfaceplayer Route29YoungsterText
 
@@ -255,11 +332,11 @@ CatchingTutorialBoxFullText:
 	done
 
 CatchingTutorialIntroText:
-	text "I've seen you a"
-	line "couple times. How"
+	text "I don't think"
+	line "this'll appear,"
 
-	para "many #MON have"
-	line "you caught?"
+	para "but how many"
+	line "#MON do ya have?"
 
 	para "Would you like me"
 	line "to show you how to"
@@ -291,6 +368,59 @@ CatchingTutorialRepeatText:
 	cont "catch #MON?"
 	done
 
+Route29RivalText_Seen:
+	text "<……> <……> <……>"
+
+	para "You got a #MON"
+	line "at the LAB."
+
+	para "What a waste."
+	line "I wanted them all."
+
+	para "<……> <……> <……>"
+
+	para "Don't you get what"
+	line "I'm saying?"
+
+	para "Well, I too, have"
+	line "a good #MON."
+
+	para "I'll show you"
+	line "what I mean!"
+	done
+
+SilverRoute29WinText:
+	text "Calm down! Why"
+	line "so serious?"
+	done
+
+Route29RivalText_YouLost:
+	text "<……> <……> <……>"
+
+	para "Bro, it's me, ???."
+
+	para "I'm going to be"
+	line "the world's great-"
+	cont "est #MON"
+	cont "slaver."
+	done
+
+SilverRoute29LossText:
+	text "Welp. That was a"
+	line "waste of time."
+	done
+
+Route29RivalText_YouWon:
+	text "<……> <……> <……>"
+
+	para "Bro, it's me, ???."
+
+	para "I'm going to be"
+	line "the world's great-"
+	cont "est #MON"
+	cont "trainer."
+	done
+
 Route29YoungsterText:
 	text "Yo. How are your"
 	line "#MON?"
@@ -308,7 +438,7 @@ Route29TeacherText:
 	cont "off them."
 
 	para "But you can go to"
-	line "NEW BARK without"
+	line "BOOMER T. without"
 
 	para "walking through"
 	line "the grass."
@@ -383,7 +513,7 @@ TuscanyGaveGiftText:
 
 TuscanyTuesdayText:
 	text "TUSCANY: Have you"
-	line "met MONICA, my"
+	line "met MONIKA, my"
 	cont "older sister?"
 
 	para "Or my younger"
@@ -407,32 +537,35 @@ Route29Sign1Text:
 	done
 
 Route29Sign2Text:
-	text "ROUTE 29"
+	text "EVENT HOUSE"
 
-	para "CHERRYGROVE CITY -"
-	line "NEW BARK TOWN"
+	para "Something will be"
+	line "here, probably"
 	done
 
 Route29_MapEvents:
 	db 0, 0 ; filler
 
 	db 1 ; warp events
-	warp_event 27,  1, ROUTE_29_ROUTE_46_GATE, 3
+	warp_event 14,  0, ROUTE_29_ROUTE_46_GATE, 3
 
 	db 2 ; coord events
-	coord_event 53,  8, SCENE_ROUTE29_CATCH_TUTORIAL, Route29Tutorial1
-	coord_event 53,  9, SCENE_ROUTE29_CATCH_TUTORIAL, Route29Tutorial2
+	coord_event  0,  0, SCENE_ROUTE29_CATCH_TUTORIAL, Route29Tutorial1
+	coord_event  0,  0, SCENE_ROUTE29_CATCH_TUTORIAL, Route29Tutorial2
+	coord_event  0,  8, SCENE_CHERRYGROVECITY_MEET_RIVAL, CherrygroveSilverSceneNorth
+	coord_event  0,  9, SCENE_CHERRYGROVECITY_MEET_RIVAL, CherrygroveSilverSceneSouth
 
 	db 2 ; bg events
-	bg_event 51,  7, BGEVENT_READ, Route29Sign1
-	bg_event  3,  5, BGEVENT_READ, Route29Sign2
+	bg_event  0,  0, BGEVENT_READ, Route29Sign1
+	bg_event 12, 22, BGEVENT_READ, Route29Sign2
 
 	db 8 ; object events
-	object_event 50, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CatchingTutorialDudeScript, -1
-	object_event 27, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route29YoungsterScript, -1
-	object_event 15, 11, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route29TeacherScript, -1
-	object_event 12,  2, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route29FruitTree, -1
-	object_event 25,  3, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route29FisherScript, -1
-	object_event 13,  4, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route29CooltrainerMScript, -1
-	object_event 29, 12, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TuscanyScript, EVENT_ROUTE_29_TUSCANY_OF_TUESDAY
-	object_event 48,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route29Potion, EVENT_ROUTE_29_POTION
+	object_event  0,  0, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CatchingTutorialDudeScript, -1
+	object_event 23,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route29YoungsterScript, -1
+	object_event 10,  2, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route29TeacherScript, -1
+	object_event 18,  8, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route29FruitTree, -1
+	object_event 10, 22, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route29FisherScript, -1
+	object_event 17, 22, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route29CooltrainerMScript, -1
+	object_event 13, 22, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TuscanyScript, EVENT_ROUTE_29_TUSCANY_OF_TUESDAY
+	object_event 25, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route29Potion, EVENT_ROUTE_29_POTION
+	object_event  0,  9, SPRITE_SILVER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_CHERRYGROVE_CITY

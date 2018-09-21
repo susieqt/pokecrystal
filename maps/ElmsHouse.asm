@@ -20,27 +20,28 @@ ElmsHouseBookshelf:
 	jumpstd difficultbookshelf
 
 ElmsWifeText:
-	text "Hi, <PLAY_G>! My"
-	line "husband's always"
+	text "Hi, <PLAY_G>! "
+	line "QUALUIGI's always"
 
-	para "so busy--I hope"
-	line "he's OK."
+	para "so busy--He hasn't"
+	line "noticed we moved"
+	cont "into his house!"
 
 	para "When he's caught"
-	line "up in his #MON"
+	line "up in his BOOTLEG"
 
-	para "research, he even"
+	para "creation, he even"
 	line "forgets to eat."
 	done
 
 ElmsSonText:
 	text "When I grow up,"
-	line "I'm going to help"
-	cont "my dad!"
+	line "I'm going to shoot"
+	cont "up my school!"
 
 	para "I'm going to be a"
-	line "great #MON"
-	cont "professor!"
+	line "great AMERICAN"
+	cont "student!"
 	done
 
 ElmsHouseLabFoodText:
@@ -58,26 +59,25 @@ ElmsHousePokemonFoodText:
 	done
 
 ElmsHousePCText:
-	text "#MON. Where do"
+	text "BOOTLEGs. Where do"
 	line "they come from? "
 
-	para "Where are they"
-	line "going?"
+	para "CHINA and RUSSIA,"
+	line "mostly."
 
 	para "Why has no one"
 	line "ever witnessed a"
-	cont "#MON's birth?"
+	cont "BOOTLEG's birth?"
 
-	para "I want to know! I"
-	line "will dedicate my"
-
-	para "life to the study"
-	line "of #MON!"
+	para "I will dedicate"
+	line "my life to finding"
+	cont "BOOTLEG birthing"
+	cont "porn!"
 
 	para "…"
 
 	para "It's a part of"
-	line "PROF.ELM's re-"
+	line "QUALUIGI's re-"
 	cont "search papers."
 	done
 

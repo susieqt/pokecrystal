@@ -174,14 +174,14 @@ MrPokemonIntroText1:
 	text "Hello, hello! You"
 	line "must be <PLAY_G>."
 
-	para "PROF.ELM said that"
-	line "you would visit."
+	para "QUARIO is kind of"
+	line "busy right now."
 	done
 
 MrPokemonIntroText2:
-	text "This is what I"
-	line "want PROF.ELM to"
-	cont "examine."
+	text "This is what he"
+	line "wanted to send"
+	cont "to QUALUIGI."
 	done
 
 MrPokemonsHouse_GotEggText:
@@ -192,34 +192,36 @@ MrPokemonsHouse_GotEggText:
 MrPokemonIntroText3:
 	text "I know a couple"
 	line "who run a #MON"
-	cont "DAY-CARE service."
+	cont "BREEDING service."
 
-	para "They gave me that"
-	line "EGG."
+	para "They gave him"
+	line "that EGG."
 
-	para "I was intrigued,"
-	line "so I sent mail to"
-	cont "PROF.ELM."
+	para "Since QUALUIGI"
+	line "has all sorts of"
+	cont "weird fetishes,"
 
-	para "For #MON evolu-"
-	line "tion, PROF.ELM is"
-	cont "the authority."
+	para "we figured he'd"
+	line "have some sort of"
+	cont "use for it."
 	done
 
 MrPokemonIntroText4:
-	text "Even PROF.OAK here"
-	line "recognizes that."
+	text "QUARIO here always"
+	line "gets weird mail"
+	cont "like that!"
 	done
 
 MrPokemonIntroText5:
-	text "If my assumption"
-	line "is correct, PROF."
-	cont "ELM will know it."
+	text "Maybe QUALUIGI"
+	line "can sell it to his"
+	cont "DEEPWEB buddies"
+	cont "for some cash."
 	done
 
 MrPokemonsHouse_MrPokemonHealText:
 	text "You are returning"
-	line "to PROF.ELM?"
+	line "to QUALUIGI?"
 
 	para "Here. Your #MON"
 	line "should have some"
@@ -227,34 +229,36 @@ MrPokemonsHouse_MrPokemonHealText:
 	done
 
 MrPokemonText_ImDependingOnYou:
-	text "I'm depending on"
-	line "you!"
+	text "Try not to drop"
+	line "that egg!"
 	done
 
 MrPokemonText_AlwaysNewDiscoveries:
-	text "Life is delight-"
-	line "ful! Always, new"
+	text "Life is awful."
+	line "Why am I even"
 
-	para "discoveries to be"
-	line "made!"
+	para "stuck in this"
+	line "ROMhack?"
 	done
 
 MrPokemonsHouse_OakText1:
-	text "OAK: Aha! So"
-	line "you're <PLAY_G>!"
+	text "O: Yo, <PLAY_G>!"
+	line "remember me?"
 
-	para "I'm OAK! A #MON"
-	line "researcher."
+	para "I'm QUARIO! I"
+	line "make shitty"
+	cont "bootlegs!"
 
-	para "I was just visit-"
-	line "ing my old friend"
-	cont "MR.#MON."
+	para "This guy is my"
+	line "new assistant."
+	cont "Being rich is"
+	cont "great!"
 
-	para "I heard you were"
-	line "running an errand"
+	para "I heard QUALUIGI"
+	line "sent you here,"
 
-	para "for PROF.ELM, so I"
-	line "waited here."
+	para "so I waited"
+	line "around for you."
 
 	para "Oh! What's this?"
 	line "A rare #MON!"
@@ -263,31 +267,31 @@ MrPokemonsHouse_OakText1:
 
 	para "Hm, I see!"
 
-	para "I understand why"
-	line "PROF.ELM gave you"
+	para "I don't know why"
+	line "QUALUIGI gave you"
 
 	para "a #MON for this"
 	line "errand."
 
-	para "To researchers"
-	line "like PROF.ELM and"
+	para "We were literally"
+	line "a short distance"
 
-	para "I, #MON are our"
-	line "friends."
+	para "away from his LAB."
+	line "Lazy fuck…"
 
-	para "He saw that you"
-	line "would treat your"
+	para "He could have"
+	line "just walked"
 
-	para "#MON with love"
-	line "and care."
+	para "here himself and"
+	line "not bothered you!"
 
-	para "…Ah!"
+	para "…Oh, right."
 
-	para "You seem to be"
-	line "dependable."
+	para "I almost comp-"
+	line "letely forgot."
 
-	para "How would you like"
-	line "to help me out?"
+	para "I have a new"
+	line "device for ya!"
 
 	para "See? This is the"
 	line "latest version of"
@@ -299,8 +303,8 @@ MrPokemonsHouse_OakText1:
 	para "#MON you've"
 	line "seen or caught."
 
-	para "It's a hi-tech"
-	line "encyclopedia!"
+	para "Maybe it'll help"
+	line "you somehow!"
 	done
 
 MrPokemonsHouse_GetDexText:
@@ -309,8 +313,8 @@ MrPokemonsHouse_GetDexText:
 	done
 
 MrPokemonsHouse_OakText2:
-	text "Go meet many kinds"
-	line "of #MON and"
+	text "Go enslave many"
+	line "#MON and"
 
 	para "complete that"
 	line "#DEX!"
@@ -318,9 +322,9 @@ MrPokemonsHouse_OakText2:
 	para "But I've stayed"
 	line "too long."
 
-	para "I have to get to"
-	line "GOLDENROD for my"
-	cont "usual radio show."
+	para "We have to get to"
+	line "CITYNAME for my"
+	cont "pirate radio show."
 
 	para "<PLAY_G>, I'm"
 	line "counting on you!"
@@ -329,7 +333,7 @@ MrPokemonsHouse_OakText2:
 MrPokemonText_GimmeTheScale:
 	text "Hm? That SCALE!"
 	line "What's that?"
-	cont "A red GYARADOS?"
+	cont "A PLOT THING?"
 
 	para "That's rare! "
 	line "I, I want it…"
@@ -337,23 +341,24 @@ MrPokemonText_GimmeTheScale:
 	para "<PLAY_G>, would you"
 	line "care to trade it?"
 
-	para "I can offer this"
+	para "I'll give an"
 	line "EXP.SHARE I got"
-	cont "from PROF.OAK."
+	cont "from QUARIO."
 	done
 
 MrPokemonText_Disappointed:
 	text "That's disappoint-"
-	line "ing. That happens"
-	cont "to be very rare."
+	line "ing. You likely"
+	cont "won't see this"
+	cont "dialogue anyway…"
 	done
 
 MrPokemonsHouse_ForeignMagazinesText:
 	text "It's packed with"
-	line "foreign magazines."
+	line "chinese cartoons."
 
-	para "Can't even read"
-	line "their titles…"
+	para "I think they're"
+	line "called MANGOS…?"
 	done
 
 MrPokemonsHouse_BrokenComputerText:

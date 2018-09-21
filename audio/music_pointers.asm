@@ -108,3 +108,4 @@ Music:
 	dba Music_MobileCenter
 	dba Music_Shop
 	dba Music_Intermission
+	dba Music_CinnabarMansion

@@ -207,29 +207,32 @@ Movement_SilverReturnsToTheShadows_NBT:
 
 Text_GearIsImpressive:
 	text "Wow, your #GEAR"
-	line "is awful!"
+	line "is old!"
 
-	para "Did your mom get"
-	line "it for you, nerd?"
+	para "[sip] back in my"
+	line "day I used to"
+	cont "play QUAKE"
+	cont "on mine!"
 	done
 
 Text_WaitPlayer:
-	text "Ayo hol up,"
+	text "Hey, wait up,"
 	line "<PLAY_G>."
 	done
 
 Text_WhatDoYouThinkYoureDoing:
-	text "'chu think you"
+	text "[sip] Whatcha"
 	line "doin?"
 	done
 
 Text_ItsDangerousToGoAlone:
-	text "There's mufuckin"
-	line "#MONs all up in"
-	cont "there." ;could use better phrasing
+	text "Are ya winnin',"
+	line "son? [sip]"
 
-	para "[smacks lips]"
-	line "Fuck outta here."
+	para "We're almost"
+	line "done mowing up"
+	cont "here, can ya"
+	cont "wait a bit?"
 	done
 
 Text_YourMonIsAdorable:
@@ -248,8 +251,8 @@ Text_TellMomIfLeaving:
 	done
 
 Text_CallMomOnGear:
-	text "Call your mom on"
-	line "your #GEAR to"
+	text "Call the matron"
+	line "on your #GEAR to"
 
 	para "let her know how" ;todo
 	line "you're doing."
@@ -260,12 +263,13 @@ Text_ElmDiscoveredNewMon:
 
 	para "I hear QUALUIGI"
 	line "discovered some"
-	cont "new #MON."
+	cont "new BOOTLEGs."
 	done
 	
 Text_nbtTestDialogue: ;for test NPC
-	text "This is a test"
-	line "NPC."
+	text "Man I hate"
+	line "Millenials."
+	cont "[sip]"
 	done
 
 NewBarkTownRivalText1:
@@ -277,19 +281,19 @@ NewBarkTownRivalText1:
 	done
 
 NewBarkTownRivalText2:
-	text "Hey!"
+	text "Oh, hey bro!"
 	
-	para "Stop oppressing"
-	line "me, Nazi." ;meme forcing, change?
+	para "Can you gimme"
+	line "some space?" 
 	done
 
 NewBarkTownSignText:
-	text "NEW BARK TOWN"
+	text "BOOMER TOWN"
 
-	para "The Town Where the"
-	line "Winds of a New"
-	cont "Shitty Romhack" ;should this be on a new paragraph?
-	cont "Blow"
+	para "The Town With the"
+	line "Wafting Smell of"
+	cont "Freshly-Mowed" ;should this be on a new paragraph?
+	cont "Grass"
 	done
 
 NewBarkTownPlayersHouseSignText:
@@ -318,24 +322,25 @@ NewBarkTown_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event  6,  3, ELMS_LAB, 1
-	warp_event 13,  5, PLAYERS_HOUSE_1F, 1
-	warp_event  3, 11, PLAYERS_NEIGHBORS_HOUSE, 1
-	warp_event 11, 13, ELMS_HOUSE, 1
+	warp_event 16, 13, ELMS_LAB, 1
+	warp_event  7,  5, PLAYERS_HOUSE_1F, 1
+	warp_event 17,  7, PLAYERS_NEIGHBORS_HOUSE, 1
+	warp_event  9,  9, ELMS_HOUSE, 1
+	warp_event  7, 15, CHERRYGROVE_MART, 2
 
 	db 2 ; coord events
-	coord_event  1,  8, SCENE_DEFAULT, NewBarkTown_TeacherStopsYouScene1
-	coord_event  1,  9, SCENE_DEFAULT, NewBarkTown_TeacherStopsYouScene2
+	coord_event 24,  8, SCENE_DEFAULT, NewBarkTown_TeacherStopsYouScene1
+	coord_event 11,  2, SCENE_DEFAULT, NewBarkTown_TeacherStopsYouScene2
 
 	db 4 ; bg events
-	bg_event  8,  8, BGEVENT_READ, NewBarkTownSign
-	bg_event 11,  5, BGEVENT_READ, NewBarkTownPlayersHouseSign
-	bg_event  3,  3, BGEVENT_READ, NewBarkTownElmsLabSign
-	bg_event  9, 13, BGEVENT_READ, NewBarkTownElmsHouseSign
-	bg_event 17,  5, BGEVENT_READ, NewBarkTownTestAreaSign ;dev test area sign **CURRENTLY BROKEN**
+	bg_event 23,  7, BGEVENT_READ, NewBarkTownSign
+	bg_event  6,  8, BGEVENT_READ, NewBarkTownPlayersHouseSign
+	bg_event 17, 15, BGEVENT_READ, NewBarkTownElmsLabSign
+	bg_event  8, 10, BGEVENT_READ, NewBarkTownElmsHouseSign
+	bg_event  9,  1, BGEVENT_READ, NewBarkTownTestAreaSign ;dev test area sign **CURRENTLY BROKEN**
 
 	db 3 ; object events
-	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
-	object_event 12,  9, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFisherScript, -1
-	object_event 7,  6, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownTestNPCScript, -1 
-	object_event  3,  2, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN
+	object_event  8,  0, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
+	object_event 11, 15, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFisherScript, -1
+	object_event 10, 19, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownTestNPCScript, -1 
+	object_event 20, 12, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN
