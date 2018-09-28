@@ -1,7 +1,6 @@
 	const_def 2 ; object constants
 	const NEWBARKTOWN_TEACHER
-	const NEWBARKTOWN_FISHER1
-	const NEWBARKTOWN_FISHER2 ;1 and 2, for a testing fisher npc
+	const NEWBARKTOWN_FISHER
 	const NEWBARKTOWN_SILVER
 
 NewBarkTown_MapScripts:
@@ -105,9 +104,6 @@ NewBarkTownTeacherScript:
 NewBarkTownFisherScript:
 	jumptextfaceplayer Text_ElmDiscoveredNewMon
 	
-NewBarkTownTestNPCScript: ;testing
-	jumptextfaceplayer Text_nbtTestDialogue
-	
 ;-----THESE ARE JUST REFERENCES FOR ME-----	
 ;AideScript_GivePotion:
 ;	opentext
@@ -152,9 +148,6 @@ NewBarkTownElmsLabSign:
 
 NewBarkTownElmsHouseSign:
 	jumptext NewBarkTownElmsHouseSignText
-	
-NewBarkTownTestAreaSign:
-	jumptext NewBarkTownTestAreaSignText
 
 Movement_TeacherRunsToYou1_NBT:
 	step LEFT
@@ -262,11 +255,6 @@ Text_ElmDiscoveredNewMon:
 	line "discovered some"
 	cont "new #MON."
 	done
-	
-Text_nbtTestDialogue: ;for test NPC
-	text "This is a test"
-	line "NPC."
-	done
 
 NewBarkTownRivalText1:
 	text "<……>"
@@ -305,14 +293,6 @@ NewBarkTownElmsHouseSignText:
 	line "ASS TRUCK RENTAL"
 	cont "AND STORAGE"
 	done
-	
-NewBarkTownTestAreaSignText:
-	text "Dev testing area"
-	line "to the north if"
-	
-	para "Susie gets around"
-	line "to putting it in."
-	done
 
 NewBarkTown_MapEvents:
 	db 0, 0 ; filler
@@ -332,10 +312,8 @@ NewBarkTown_MapEvents:
 	bg_event 11,  5, BGEVENT_READ, NewBarkTownPlayersHouseSign
 	bg_event  3,  3, BGEVENT_READ, NewBarkTownElmsLabSign
 	bg_event  9, 13, BGEVENT_READ, NewBarkTownElmsHouseSign
-	bg_event 17,  5, BGEVENT_READ, NewBarkTownTestAreaSign ;dev test area sign **CURRENTLY BROKEN**
 
 	db 3 ; object events
 	object_event  6,  8, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
 	object_event 12,  9, SPRITE_FISHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownFisherScript, -1
-	object_event 7,  6, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, NewBarkTownTestNPCScript, -1 
 	object_event  3,  2, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN
