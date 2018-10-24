@@ -110,6 +110,10 @@
 	const MUSIC_SHOP                         ; 67
 	const MUSIC_INTERMISSION                 ; 68
 	const MUSIC_CINNABARMANSION              ; 69
+	const MUSIC_BLACK_CITY                   ; 70
+	const MUSIC_DEWFORD_TOWN                 ; 71
+	const MUSIC_ETERNA_FOREST                ; 72
+	const MUSIC_STARK_MOUNTAIN               ; 73
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $64

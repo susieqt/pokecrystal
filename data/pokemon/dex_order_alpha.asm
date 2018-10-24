@@ -38,6 +38,8 @@ AlphabeticalPokedexOrder:
 	db CYNDAQUIL
 	db DELIBIRD
 	db DEWGONG
+	db DIALGA
+	db DIALGA_P
 	db DIGLETT
 	db DITTO
 	db DODRIO

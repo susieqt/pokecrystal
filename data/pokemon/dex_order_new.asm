@@ -252,3 +252,5 @@ NewPokedexOrder:
 	db MEWTWO
 	db MEW
 	db CELEBI
+	db DIALGA
+	db DIALGA_P

@@ -3483,3 +3483,36 @@ CelebiEvosAttacks:
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
 	db 0 ; no more level-up moves
+	
+DialgaEvosAttacks:
+	db EVOLVE_ITEM, DUSK_STONE, DIALGA_P
+	db 0 ; no more evolutions
+	db 1, SCARY_FACE
+	db 1, DRAGONBREATH
+	db 6, METAL_CLAW
+	db 10, ANCIENTPOWER
+	db 15, SLASH
+	db 19, ROCK_SLIDE
+	db 24, IRON_HEAD
+	db 28, DRAGON_RAGE
+	db 33, EARTHQUAKE
+	db 37, HYPER_BEAM
+	db 42, SACRED_FIRE
+	db 46, IRON_TAIL
+	db 0 ; no more level-up moves
+	
+DialgaPEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, SCARY_FACE
+	db 1, DRAGON_RAGE
+	db 6, BITE
+	db 10, ANCIENTPOWER
+	db 15, THRASH
+	db 19, CONFUSION
+	db 24, CRUNCH
+	db 28, DRAGONBREATH
+	db 33, EARTHQUAKE
+	db 37, HYPER_BEAM
+	db 42, ROAR
+	db 46, BEAT_UP
+	db 0 ; no more level-up moves
